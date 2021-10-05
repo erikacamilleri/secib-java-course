@@ -2,7 +2,7 @@ package lower.lesson01;
 
 public class FirstSteps {
     
-    public static void example()
+    public static void lesson()
     {
         // I am just displaying a greeting to the world!
         System.out.println("Let's declare some variables!");
