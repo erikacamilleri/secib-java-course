@@ -33,7 +33,7 @@ public class BasicArithmetic {
         // Recall of displaying output and using + for concatinating text
         System.out.println("Total Points: " + totalPoints); // 250
         System.out.println("Lives Available: " + livesAvailable); // 2
-        System.out.println("Cooperative Mode On Points Each Player: " + totalPointsEachPlayer); // 125
+        System.out.println("Cooperative Mode On Points Each Player: " + totalPointsEachPlayer); // 83
         System.out.println("Just checking if points are easily divisible: " + remainder); // 1
     }
 }
