@@ -12,9 +12,28 @@ public class Person {
     
     public int age;
 
+    /**
+     * @param name
+     * @param age
+     */
     public Person(String name, int age) {
         this.id = autoIncrement++;
         this.name = name;
         this.age = age;
+    }
+
+    /**
+     * ---- STANDARD GETTER METHODS -----------------------------------------------------------------
+     */
+    public int getId() {
+        return this.id;
+    }
+
+    public String getName () {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
     }
 }

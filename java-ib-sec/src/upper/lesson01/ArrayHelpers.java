@@ -65,11 +65,27 @@ public class ArrayHelpers {
         Person ervin = new Person("Ervin", 15);
         Person jaylan = new Person("Jaylan", 90);
 
-        // TODO Create array and store the objects
+        // Create array and store the person objects
+        Person[] people = {paul, ervin, jaylan};
+
+        for(Person person : people) {
+            // Display the people records
+            System.out.println(person.getId() + " " + person.getName() + " " + person.getAge());
+        }
     }
 
     public static void twoDimensionalArrayExample() {
-        // TODO Represent tabular data in an array. 
+        // Declare a multi-dimensional array to store some numbers
+        int[][] numbers = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+        
+        for (int col = 0; col < 3; col++) {
+            for (int row = 0; row < 2; row ++) {
+                System.out.println(numbers[col][row]);
+            }
+        }
     }
 
     /**
@@ -91,5 +107,72 @@ public class ArrayHelpers {
             }
         }
         System.out.println("Distance " + minimum + " between element " + minindex + " and element " + ((int)minindex + 1));
+    }
+
+    /**
+     * Binary Search
+     * Courtesy of Emmanouela Stranomiti <3
+     */
+    public static void binarySearch() {
+        int[] values = {11,12,15,16,112,118,123,145};
+        int target = 15;
+        int min = 0;
+        int high = 7; // array elements -1
+        boolean found = false;
+        int answer = 0;
+        int mid = 0;
+        do {
+            mid = ((min+high)/2);
+            if(values[mid] == target) {
+                found = true;
+                answer = mid;
+            }
+            if(target> values[mid]) {
+                min = mid+1;
+            } else {
+                high = mid-1;
+            }
+        } while(found==false && min<=high);
+        
+        if (found == true) {
+            System.out.println(target+" found at array index " + answer);
+        } else {
+            System.out.println(target+" was not found");
+        }
+    }
+
+    // https://www.youtube.com/watch?v=g-PGLbMth_g
+    public static void selectionSort() {
+        // Declaring the size of the array of elements
+        int SIZE = 11;
+
+        // The array of numbers we want to sort
+        int[] elements = {1, 5, 3, 86, 256, 420, 9, 510, 51, 24, 60};
+
+        // Initialising algorithm defaults
+        int min = 0; // minimum value in the range of array we are sorting
+        int i = 0; // an iterative element (blue pointer)
+        int temp = 0; // temporary place holder to "swap" element positions
+
+        // We are going to loop starting from beginning until the element before last 
+        for(min = 0; min < SIZE; min++) {
+            // Setting pointer to minimum
+            i = min;
+            // We are going to loop to find the current minimum element
+            for (int current = (min + 1); current < SIZE; current++) {
+                if (elements[current] > elements[i]) {
+                    i = current; // We are setting the red pointer
+                }
+            }
+            // Swapping
+            temp = elements[i];
+            elements[i] = elements[min];
+            elements[min] = temp;
+        }
+
+        // Array should be sorted!
+        for(int element : elements) {
+            System.out.print(element + " ");
+        }
     }
 }
