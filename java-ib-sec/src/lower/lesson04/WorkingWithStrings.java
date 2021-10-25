@@ -27,4 +27,17 @@ public class WorkingWithStrings {
 
         System.out.println("Does my favourite colour end with 'eri'? " + flag);
     }
+
+    /**
+     * Some while ago, the European Union decreed that all traders in the UK
+     * sell their goods by the kilo and not by pound. The following steps should
+     * carry out the conversion between kilo and pounds.
+     * 1. Prompt the user to enter a weight in pounds
+     * 2. Store the input in a variable
+     * 3. Add 2.2 to get the value in kilos.
+     * 4. Display the conversion to the user.
+     */
+    public static void challenge() {
+        
+    }
 }
