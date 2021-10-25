@@ -1,6 +1,7 @@
 import lower.lesson01.FirstSteps;
 import lower.lesson02.BasicArithmetic;
 import lower.lesson03.InputOutput;
+import lower.lesson04.WorkingWithStrings;
 import upper.lesson01.ArrayHelpers;
 
 public class App {
@@ -16,6 +17,8 @@ public class App {
 
         // InputOutput.lesson();
 
-        InputOutput.challenge();
+        // InputOutput.challenge();
+
+        WorkingWithStrings.lesson();
     }
 }
