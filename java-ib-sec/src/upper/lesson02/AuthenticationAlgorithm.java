@@ -3,6 +3,12 @@ package upper.lesson02;
 public class AuthenticationAlgorithm {
     public static void main(String[] args) {
         // USER_ACCOUNTS // is a collection of user records
+        UserAccountRepository userAccounts = new UserAccountRepository();
+        userAccounts.addUserAccount(new UserAccount("erika.camilleri@gmail.com", "password123"));
+        
+        
+        
+        
         // INPUT USERNAME
         // INPUT PASSWORD
         // USER_ACCOUNT = NULL
