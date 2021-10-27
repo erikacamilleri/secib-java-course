@@ -1,4 +1,4 @@
-package upper.lesson02;
+package upper.lesson02.user_authentication;
 
 public class UserAccount {
     

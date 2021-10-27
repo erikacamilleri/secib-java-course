@@ -1,4 +1,4 @@
-package upper.lesson02;
+package upper.lesson02.user_authentication;
 
 import java.util.Scanner;
 
@@ -20,24 +20,23 @@ public class AuthenticationAlgorithm {
         System.out.println("Please type in your passw...");
         String password = sc.next();
         // USER_ACCOUNT = NULL
-        UserAccount userAccount = userAccounts.findByUsername("paul.waterssmith@gmail.com");
-
+        UserAccount userAccount = userAccounts.findByUsername(username);
+        // if FOUND = false then
         if (userAccount == null) {
+            //     DISPLAY "There is a problem with your credentials."
             System.out.println("There is a problem with your credentials");
         } else if (userAccount.getPassword() == password) {
+            // else if PASSWORD = USER_ACCOUNT.password
+            //     DISPLAY "You are logged in."
             System.out.println("You are logged in!");
         } else {
+            // else
+            //     DISPLAY "There is a problem with your credentials."
+            // end if
             System.out.println("There is a problem with your credentials");
         }
 
-
-        
-        // if FOUND = false then
-        //     DISPLAY "There is a problem with your credentials."
-        // else if PASSWORD = USER_ACCOUNT.password
-        //     DISPLAY "You are logged in."
-        // else
-        //     DISPLAY "There is a problem with your credentials."
-        // end if
+        // Close resources
+        sc.close();
     }
 }
