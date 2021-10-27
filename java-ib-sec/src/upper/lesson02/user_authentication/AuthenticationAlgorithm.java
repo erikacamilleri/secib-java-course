@@ -17,15 +17,15 @@ public class AuthenticationAlgorithm {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please type in your username...");
         String username = sc.next();
-        System.out.println("Please type in your passw...");
+        System.out.println("Please type in your password...");
         String password = sc.next();
         // USER_ACCOUNT = NULL
         UserAccount userAccount = userAccounts.findByUsername(username);
         // if FOUND = false then
         if (userAccount == null) {
             //     DISPLAY "There is a problem with your credentials."
-            System.out.println("There is a problem with your credentials");
-        } else if (userAccount.getPassword() == password) {
+            System.out.println("There is a problem with your credentials - here");
+        } else if (userAccount.getPassword().equals(password)) {
             // else if PASSWORD = USER_ACCOUNT.password
             //     DISPLAY "You are logged in."
             System.out.println("You are logged in!");

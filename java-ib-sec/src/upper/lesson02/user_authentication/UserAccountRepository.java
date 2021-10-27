@@ -5,10 +5,7 @@ import java.util.Iterator;
 
 public class UserAccountRepository {
     protected ArrayList<UserAccount> userAccountList;
-
-    /**
-     * 
-     */
+    
     public UserAccountRepository () {
         this.userAccountList = new ArrayList<UserAccount>();
     }
@@ -30,7 +27,8 @@ public class UserAccountRepository {
         Iterator<UserAccount> it = userAccountList.iterator();
         while (it.hasNext()) {
             UserAccount compare = it.next();
-            if (compare.username == username) {
+            System.out.println(compare.username + " " + username);
+            if (compare.username.equals(username)) {
                 return compare;
             }
         }
