@@ -1,9 +1,10 @@
 package lower.lesson05;
-
+/**
+ * 
+ */
 public class Procedures {
-    
     public static void lesson() {
-        int score = Procedures.multiply(4, 2);
+        int score = multiply(4, 2); // Procedures.multiply(4, 2) if making a method call in another class!
         System.out.println("The value of score is " + score);
     }
 

@@ -26,11 +26,10 @@ What is User Authentication in simple English?
 
 User authentication is a process that allows a device to verify the identify of someone who connects to a network resource. 
 
-// TODO Insert Flowchart of the Auth Process
+<img src="https://raw.githubusercontent.com/erikacamilleri/bytesizelearning/main/java_assets/ib-upper-lesson02-user-authentication.png" width="auto" height="600" />
 
  The back-end logic can be found in the `user_authentication` folder.
 
  The following technical decisions have been made primarily because coding in Java requires a certain frame of mind:
  - Implemented the (Repository Pattern)[https://java-design-patterns.com/patterns/repository/] to maintain a list of User Accounts.
  - A UserAccount with constructor and standard property getters
- - 
