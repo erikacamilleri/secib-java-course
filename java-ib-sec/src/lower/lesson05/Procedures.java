@@ -20,8 +20,8 @@ public class Procedures {
         System.out.println("6. Beef Patty");
         System.out.println("7. Iceberg Lettuce");
         System.out.println("8. Sliced Tomatoe");
-        System.out.println("8. Spread");
-        System.out.println("1. Bottom Bun");
+        System.out.println("9. Spread");
+        System.out.println("10. Bottom Bun");
     }
 
     /**
