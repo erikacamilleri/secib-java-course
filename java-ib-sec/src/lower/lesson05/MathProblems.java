@@ -51,12 +51,36 @@ public class MathProblems {
      * @param step
      */
     public static void fibonacciSeries(int n, int step) {
-        
+        /**
+         * Example of calling a procedure.
+         */
         System.out.print(fibonacci(step) + " ");
         
         if (step < n) {
             step = step + 1;
             fibonacciSeries(n, step);
         }
+    }
+    
+    /**
+     * ACS Page 2 5.1 Pages 2 - 3
+     * This makes the same assumption as in the flow chart, that move is another procedure
+     * we need to call. 
+     * @param n         | stack number
+     * @param from      | move stack from the rod
+     * @param to        | move stack to rod
+     * @param temporary | stacks out of the way
+     */
+    public static void towersOfHanoi(int n, char from, char to, char temporary) {
+        if (n == 1) {
+            System.out.println("Move " + n + " from " + from + " to " + to + ".");
+            return;
+        }
+        
+        towersOfHanoi(n - 1, from, temporary, to);
+        System.out.println("Move " + n + " from " + from + " to " + to + ".");
+        
+        towersOfHanoi(n - 1, temporary, to, from);
+        System.out.println("Move " + n + " from " + from + " to " + to + ".");
     }
 }
