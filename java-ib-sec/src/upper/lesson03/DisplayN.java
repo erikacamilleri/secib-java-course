@@ -9,7 +9,7 @@ public class DisplayN {
     public static final String TEXT_RESET = "\u001B[0m";
     public static final String TEXT_BLUE = "\u001B[34m";
 
-    public static boolean LOGGING = false;
+    public static boolean LOGGING = true;
 
     public static void main(String[] args) {
         // N = 0
@@ -22,9 +22,8 @@ public class DisplayN {
 
         while (n <= 3) {
             System.out.println("OK");
-            log("LOG[DEBUG]    Value of n: " + n + "    Output: OK" );
             n = n + 1;
-            log("LOG[DEBUG]    Value of n: " + n + "    Output: NA");
+            log("LOG[DEBUG]    Value of n: " + n + "    Output: OK");
         }
         System.out.println(n);
         log("LOG[DEBUG]    Value of n: " + n + "    Output: " + n);

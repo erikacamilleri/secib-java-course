@@ -1,19 +1,44 @@
 package upper.lesson04;
 
-import java.util.HashMap;
+import java.io.File;
+import java.util.Properties;
+import java.util.Scanner;
 
+/**
+ * https://crunchify.com/java-properties-file-how-to-read-config-properties-values-in-java/
+ */
 public class Environment {
 
-    private HashMap<String, String> variables;
+    private static Environment singleton = null;
 
-    public Environment () {
+    private String FILE_NAME = "java-ib-sec/res/conf/env.txt";
+    
+    public Properties properties = null;
 
+    private Environment () {
+        this.properties = System.getProperties();
+        this.loadProperties();
     }
 
-    public String getEnvironmentVariable(String key, String defaultValue) {
-        if (variables.containsKey(key)) {
-            return variables.get(key);
+    public static Environment instance() {
+        if (singleton == null) {
+            singleton = new Environment();
         }
-        return defaultValue;
+        return singleton;
+    }
+
+    public void loadProperties() {
+        try {
+			File env = new File(this.FILE_NAME);
+            Scanner sc = new Scanner(env);
+            while (sc.hasNextLine()) {
+               String data = sc.nextLine();
+               String[] kv = data.split(" = ");
+               this.properties.put(kv[0], kv[1]);
+            }
+            sc.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

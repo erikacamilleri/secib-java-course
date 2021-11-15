@@ -36,7 +36,7 @@ public class AuthenticationAlgorithm {
             System.out.println("There is a problem with your credentials");
         }
 
-        // Close resources
+        // Close resources...
         sc.close();
     }
 }
