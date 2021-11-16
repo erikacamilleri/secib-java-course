@@ -13,7 +13,7 @@ import upper.lesson04.logging_system.subscriber.LogEventSubscriber;
 /**
  * https://www.w3schools.com/java/java_files_create.asp
  */
-public class FileWriteObserver implements LogEventObserver<String> {
+public class FileWriteObserver implements LogEventObserver {
 
     protected File logFile;
 
@@ -52,6 +52,7 @@ public class FileWriteObserver implements LogEventObserver<String> {
       }
     }
 
+    @SuppressWarnings("unchecked")
     public String adapt(LogEvent e) {
       DateFormat dateFormat = new SimpleDateFormat("[HH:mm:ss]");
       Date date = new Date();

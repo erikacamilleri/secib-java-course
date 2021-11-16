@@ -70,7 +70,6 @@ public class MathSeries {
 
         // Check if the number is too big...
         if (n > 50000) {
-            // 6logEventSubscriber.notifyAbout(new LogEvent(1, "NTooBigNow"));
             throw new Exception("The number is too large the limit set is 50000.");
         }
 

@@ -1,7 +1,6 @@
 package upper.lesson04.mailer;
 
 import java.util.HashMap;
-import java.util.Properties;
 
 import javax.mail.Authenticator;
 import javax.mail.Message;

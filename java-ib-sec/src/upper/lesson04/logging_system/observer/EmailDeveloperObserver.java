@@ -5,7 +5,9 @@ import upper.lesson04.logging_system.LogEvent;
 import upper.lesson04.logging_system.subscriber.LogEventSubscriber;
 import upper.lesson04.mailer.Email;
 
-public class EmailDeveloperObserver implements LogEventObserver<Email> {
+public class EmailDeveloperObserver implements LogEventObserver {
+   
+    @SuppressWarnings("unchecked")
     public Email adapt(LogEvent e) {
         Environment environment = Environment.instance();
         return new Email("alerts@mathseries.com", environment.properties.getProperty("alerts.dev.email"), "A L3 error has occurred", e.toString(), false);

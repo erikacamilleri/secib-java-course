@@ -3,7 +3,7 @@ package upper.lesson04.logging_system.observer;
 import upper.lesson04.logging_system.LogEvent;
 import upper.lesson04.logging_system.subscriber.LogEventSubscriber;
 
-public class ConsolePrintObserver implements LogEventObserver<String> {
+public class ConsolePrintObserver implements LogEventObserver {
 
     public static final String TEXT_RESET = "\u001B[0m";
     public static final String TEXT_BLUE = "\u001B[34m";
@@ -22,6 +22,7 @@ public class ConsolePrintObserver implements LogEventObserver<String> {
         System.out.println(TEXT_BLUE + "[LOG_INFO]" + message + TEXT_RESET);
     }
 
+    @SuppressWarnings("unchecked")
     public String adapt(LogEvent e) {
         return "::" + e.getEventName() + "::" + e.getEventDescription();
     }
