@@ -17,35 +17,62 @@ public class MathPal {
         System.out.println("This is an educational toy for early learners.");
         System.out.println("C. Simple Counting 1,2,3 [Pic of Monkey]");
         System.out.println("A. Addition [Pic of Apples in Basket]");
+        System.out.println("B. Bigger Number [Pic of Whale and Clown Fish]");
+        System.out.println("L. Logic Game [Pic of Robot]");
         System.out.println("E. Exit [Bye Song]");
         System.out.println();
     }
 
     public static void chooseOption() {
-        
         Scanner sc = new Scanner(System.in);
         System.out.println("What shall we do today?");
         char option = sc.next().charAt(0);
 
         while(option != 'E') {
             switch (option) {
-                case 'C' : addition(); break; 
-                case 'A' : addition(); break;
-                case 'E' : sayBye();
+                case 'C' : {
+                    System.out.println("Let's learn how to count!");
+                    System.out.println("Give me a number from 5 to 10:");
+                    int upTo = sc.nextInt();
+                    counting(1, upTo, 1);
+                    break;
+                } 
+                case 'A' : {
+                    System.out.println("Let's learn how to add!");
+                    System.out.println("Give me a number from 1 to 10:");
+                    int a = sc.nextInt();
+                    System.out.println("Give me another number from 1 to 10:");
+                    int b = sc.nextInt();
+                    addition(a, b);
+                    break;
+                }
+                case 'L' : {
+                    System.out.println("Let's play Logic, my favourite!");
+                    System.out.println("Mum does not let us play outside all the time. \nWe can play outside depending on whether or not we were good. \nBut if we were good and it is raining outside, can we still play?");
+                    System.out.println("Mum let us play outside if your homework is done and if the weather is nice...");
+                    System.out.println("Did you do your homework?");
+                    boolean isHomeworkDone = sc.nextBoolean();
+                    System.out.println("Is the weather nice outside?");
+                    boolean isWeatherNice = sc.nextBoolean();
+                    canWePlayFootball(isHomeworkDone, isWeatherNice);
+                    break;
+                }
                 default  : {
                     System.out.println("You are being silly and trying to break me. Bye bye.");
-                    System.exit(-1);
+                    System.exit(0);
                 }
             }
             System.out.println("What shall we do next?");
             option = sc.next().charAt(0);
+        }
+        if (option == 'E') {
+            sayBye();
         }
         sc.close();
     }
 
     public static void sayBye() {
         System.out.println("Was nice playing with you, until next time!");
-        System.exit(0);
     }
 
     public static String printStar(int n, String s) {
@@ -69,7 +96,33 @@ public class MathPal {
         }
     }
 
-    public static void addition() {
-        System.out.println("We are doing addition");
+    public static void addition(int a, int b) {
+        System.out.println(a + " + " + b + " = " + (a + b));
+    }
+
+    public static void whichIsTheBiggerNumber(int a, int b) {
+        if (a > b) {
+            System.out.println(a + " is larger than " + b);
+        } else if (b > a) {
+            System.out.println(b + " is larger than " + a);
+        } else {
+            System.out.println("Both numbers are equal!");
+        }
+    }
+
+    public static void canWePlayFootball(boolean isHomeworkDone, boolean isWeatherNice) {
+        if (isHomeworkDone && isWeatherNice) {
+            System.out.println("You have done your homework, and the weather is nice, go play football.");
+        } else {
+            System.out.println("No playing outside, sorry!");
+        }
+    }
+
+    public static void canWePlayInside(boolean isHomeworkDone, boolean isWeatherNice) {
+        if (isHomeworkDone && !isWeatherNice) {
+            System.out.println("You have done your homework, and the weather is horrible, stay in with your toy.");
+        } else {
+            System.out.println("No inside, sorry!");
+        }
     }
 }
