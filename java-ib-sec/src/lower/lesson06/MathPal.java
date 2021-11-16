@@ -17,6 +17,7 @@ public class MathPal {
         System.out.println("This is an educational toy for early learners.");
         System.out.println("C. Simple Counting 1,2,3 [Pic of Monkey]");
         System.out.println("A. Addition [Pic of Apples in Basket]");
+        System.out.println("E. Exit [Bye Song]");
         System.out.println();
     }
 
@@ -25,23 +26,26 @@ public class MathPal {
         Scanner sc = new Scanner(System.in);
         System.out.println("What shall we do today?");
         char option = sc.next().charAt(0);
-        
+
         while(option != 'E') {
-            option = sc.next().charAt(0);
             switch (option) {
-                case 'C' : addition(); break;
+                case 'C' : addition(); break; 
                 case 'A' : addition(); break;
-                case 'E' : exit(); break;
-                default  : System.out.println("You are being silly and trying to break me. Bye bye.");
+                case 'E' : sayBye();
+                default  : {
+                    System.out.println("You are being silly and trying to break me. Bye bye.");
+                    System.exit(-1);
+                }
             }
             System.out.println("What shall we do next?");
+            option = sc.next().charAt(0);
         }
         sc.close();
     }
 
-    public static void exit() {
+    public static void sayBye() {
         System.out.println("Was nice playing with you, until next time!");
-        exit();
+        System.exit(0);
     }
 
     public static String printStar(int n, String s) {
@@ -66,6 +70,6 @@ public class MathPal {
     }
 
     public static void addition() {
-
+        System.out.println("We are doing addition");
     }
 }
