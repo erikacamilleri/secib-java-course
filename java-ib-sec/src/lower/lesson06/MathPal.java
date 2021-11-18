@@ -28,16 +28,19 @@ public class MathPal {
         System.out.println("What shall we do today?");
         char option = sc.next().charAt(0);
 
+        // While the child would like to keep on playing with the toy...
         while(option != 'E') {
             switch (option) {
                 case 'C' : {
+                    // Counting
                     System.out.println("Let's learn how to count!");
                     System.out.println("Give me a number from 5 to 10:");
                     int upTo = sc.nextInt();
-                    counting(1, upTo, 1);
+                    counting(1, upTo, 1); // Calling a method and passing parameters, note that you can pass in a value or a variable!
                     break;
                 } 
                 case 'A' : {
+                    // Addition
                     System.out.println("Let's learn how to add!");
                     System.out.println("Give me a number from 1 to 10:");
                     int a = sc.nextInt();
@@ -47,6 +50,7 @@ public class MathPal {
                     break;
                 }
                 case 'L' : {
+                    // Logic
                     System.out.println("Let's play Logic, my favourite!");
                     System.out.println("Mum does not let us play outside all the time. \nWe can play outside depending on whether or not we were good. \nBut if we were good and it is raining outside, can we still play?");
                     System.out.println("Mum let us play outside if your homework is done and if the weather is nice...");
@@ -59,7 +63,7 @@ public class MathPal {
                 }
                 default  : {
                     System.out.println("You are being silly and trying to break me. Bye bye.");
-                    System.exit(0);
+                    System.exit(-1); // Exit the program abruptly here
                 }
             }
             System.out.println("What shall we do next?");
