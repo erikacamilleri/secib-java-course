@@ -4,8 +4,9 @@ import java.io.File;
 import java.util.Properties;
 import java.util.Scanner;
 
-/**
- * https://crunchify.com/java-properties-file-how-to-read-config-properties-values-in-java/
+/** 
+ * This class implements the Singleton Design Pattern
+ * https://www.programiz.com/java-programming/singleton
  */
 public class Environment {
 

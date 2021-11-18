@@ -4,9 +4,10 @@ We have covered a lot of programming concepts in Java, mostly to do with very si
 
 Let's explore new turf and really appreciate what Java has to offer. This lesson tackles some advanced OOP features and programming concepts:
 
-- Throwing Exceptions ![Programmiz Course](https://www.programiz.com/java-programming/exceptions)
-- Definition of an interface and implementing them ![Programmiz Course](https://www.programiz.com/java-programming/interfaces)
-- Implementation of the **Observer Design Pattern** ![Watch Video](https://www.youtube.com/watch?v=98DiwRp-KZk)
+- Throwing Exceptions [Programmiz Course](https://www.programiz.com/java-programming/exceptions)
+- Definition of an interface and implementing them [Programmiz Course](https://www.programiz.com/java-programming/interfaces)
+- Implementation of the **Observer Design Pattern** [Watch Video](https://www.youtube.com/watch?v=98DiwRp-KZk)
+- Implementation of the **Singleton Design Pattern** [Watch Video](https://www.youtube.com/watch?v=KUTqnWswPV4)
 - Generics
 - Email with a test mail server (using third party dependencies)
 - Loading environment variables from a text file
