@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class MathPal {
     
     public static void main(String[] args) {
-        onboarding();
-        chooseOption();
+        // onboarding();
+        // chooseOption();
+        // timestable(3);
+        oddOrEven();
     }
 
     public static void onboarding() {
@@ -80,7 +82,7 @@ public class MathPal {
     }
 
     public static String printStar(int n, String s) {
-        if (n == 1) {
+        if (n == 0) {
             return s;
         }
         s = s + "*";
@@ -128,5 +130,35 @@ public class MathPal {
         } else {
             System.out.println("No inside, sorry!");
         }
+    }
+
+    public static void timestable(int n) {
+        for(int m = 1; m <= 12; m++) { // m++ means m = m +
+            int rowResult = m * n;
+            System.out.print(m + " X " + n + " = " + rowResult + "  ");
+            // draw grouped stars for the current multiplier
+            for (int p = 1; p <= m; p++) { // need to loop on a new variable!
+                System.out.print(printStar(3, "") + "  ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void oddOrEven() {
+        // Pre-condition
+        char again = 'y';
+        Scanner sc = new Scanner(System.in);
+        while(again != 'n') { 
+            System.out.println("Give me a number and I will tell you if it is odd or even.");
+            int number = sc.nextInt();
+            if(number % 2 == 0) {
+                System.out.println("Even!");
+            } else {
+                System.out.println("Odd!");
+            }
+            System.out.println("Would you like to go again? Type y for yes and n for no.");
+            again = sc.next().charAt(0);                      
+        }
+        sc.close();  
     }
 }
