@@ -95,11 +95,11 @@ while(again != 'n') {
 sc.close();  
 ```
 
-# Logical Rules for Real-World
+# A cleaner way to make decisions
 
-To design digital solutions to real world problems we need to understand
+In the previous lesson we looked at how our algorithms can take shape or form depending on some action. In MathPal we definitely see this sort of thing again. Based on what the user chooses, the algorithm is going to do different actions. We have learnt how to do the IF...ELSE statement, but if it gets too repetitive there is a better way.
 
-## The SWITCH statement
+## The Switch Statement
 
 In Java there is the switch statement which is meant to avoid too many IF statements that test the same condition. This works very well with three or more values, for example, checking the user option of a menu!
 
@@ -122,3 +122,8 @@ switch(/* a variable to check */) {
     }
 }
 ```
+
+# Logical Rules for Real-World
+
+To design digital solutions to real world problems we need to understand
+
