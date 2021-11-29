@@ -1,25 +1,20 @@
 package upper.lesson05.record;
 
+import java.util.ArrayList;
+
 import upper.lesson05.entity.Car;
 
-public class CarRecordManager extends BaseEntityRecord {
-
+public class CarEntityFile extends AbstractEntityFile<Car> {
+    /**
+     * Entity object for persistance
+     */
     private Car car;
 
     private String RECORD_FILE_NAME = "cars.txt";
 
-    public void save(Car car) {
-       this.car = car;
-       if (this.car.id != -1) {
-           // save a new car
-           this.update(this.car.id);
-       } else {
-           // create a new car record
-           this.car.id = this.getLastRecordId() + 1;
-           this.insert();
-       }
-    }
-
+    /**
+     * ------ Internal File Methods -----------------------------------------------
+     */
     @Override
     protected String getFileName() {
         return RECORD_FILE_NAME;
@@ -39,8 +34,9 @@ public class CarRecordManager extends BaseEntityRecord {
         record += String.format("%1$" + 10 + "s", this.car.licensePlate) + this.DELIMITER;
         return record;
     }
-    
-    public static Car deserialize(String record) {
+
+    @Override
+    protected Car deserialize(String record) {
         String[] fields = record.split(";");
         int id =  Integer.parseInt(fields[0].trim());
         String model = fields[1].trim();
@@ -51,11 +47,38 @@ public class CarRecordManager extends BaseEntityRecord {
         return car;
     }
 
-     /**
-      * Read
+    /**
+     * ------ Data Access Object Methods API ----------------------------------------------
+     */
+    public ArrayList<Car> all() {
+        ArrayList<Car> allCars = new ArrayList<Car>();
+        for(int i = 1; i <= getLastRecordId(); i++) {
+            allCars.add(this.getById(i));
+        }
+        return allCars;
+    }
+
+    /**
+     * @param id
+     * @return
      */
     public Car getById(int id) {
         String data = this.read(id);
         return deserialize(data);
     }
+
+    /**
+     * @param car
+     */
+    public void save(Car car) {
+        this.car = car;
+        if (this.car.id != -1) {
+            // save a new car
+            this.update(this.car.id);
+        } else {
+            // create a new car record
+            this.car.id = this.getLastRecordId() + 1;
+            this.insert();
+        }
+     }
 }
