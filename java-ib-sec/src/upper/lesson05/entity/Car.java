@@ -1,6 +1,8 @@
 package upper.lesson05.entity;
 
-import upper.lesson05.record.CarRecordManager;
+import java.util.ArrayList;
+
+import upper.lesson05.record.CarEntityFile;
 
 public class Car {
 
@@ -23,13 +25,17 @@ public class Car {
      * Persistence
      */
     public void save() {
-        (new CarRecordManager()).save(this);
+        (new CarEntityFile()).save(this);
     }
 
     /**
      * Querying
      */
+    public static ArrayList<Car> all() {
+        return (new CarEntityFile()).all();
+    }
+
     public static Car getById(int id) {
-        return (new CarRecordManager()).getById(id);
+        return (new CarEntityFile()).getById(id);
     }
 }

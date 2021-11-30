@@ -1,2 +1,4 @@
-   1;                      BMW;                   Colour;    BMW334;
-   2;                   Toyota;                   Colour;    XYZ777;
+   1;                   Nissan;                   Colour;    GHT456;
+   2;                   Nissan;                   Colour;    GHT456;
+   3;                   Nissan;                   Colour;    GHT456;
+   4;                   Toyota;                   Colour;    FBJ112;
