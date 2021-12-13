@@ -3,3 +3,5 @@
 .vscode/settings.json
 res/conf/env.txt
 log/*
+java-ib-sec/res/conf/env.txt
+java-ib-sec/.vscode/settings.json
