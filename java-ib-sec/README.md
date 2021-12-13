@@ -8,6 +8,8 @@ The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
+- `database`: the folder to contain data files
+- `log`: the folder to contain data files
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
