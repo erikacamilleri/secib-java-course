@@ -16,15 +16,19 @@ public class DecimalBinaryConversion {
 
         // process
         try {
+            // the string input accepted is being converted to a double
+            // using Java out of the box code... complexity is hidden, all I need to know
+            // is that I need to pass in a string, and it gives me back a double
+            // but be careful, things can go wrong!
             double number = Double.parseDouble(numberIn);
             if (number > 0) {
                 String result = decimalToBinary(number, 5);
                 // output
-                System.out.println("The binary representation of " + numberIn + " is: " + result);
+                System.out.println("The binary representation of " + number + " is: " + result);
             } else {
                 System.out.println("We told you to put in a positive number. We don't support negative numbers.");
             } 
-        } catch (NullPointerException e) {
+        } catch (NullPointerException e) { // catch exceptions that you can foresee
             System.out.println("You have entered nothing. Please try again.");
         } catch (NumberFormatException e) {
             System.out.println("We cannot perform the conversion. Please try again.");
