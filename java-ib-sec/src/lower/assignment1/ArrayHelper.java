@@ -64,28 +64,30 @@ public class ArrayHelper {
     }
 
     /**
-     * TODO Bill
+     * Bill
      * Calculate average value of array elements.
      * E.g. {1, 2, 3} ==> 3
      * @param arr
      * @return average
      */
     public static int average(int[] arr) {
-        int average = -1;
-        // TODO average implementation
+        int average = sum(arr) / arr.length;
         return average;
     }
 
     /**
-     * TODO Bill
+     * Bill
      * Calculate the total sum of array elements.
      * E.g. {1, 2, 3} => 6
      * @param arr
      * @return sum
      */
     public static int sum(int[] arr) {
-        int sum = -1;
-        // TODO average implementation
+        int sum = 0;
+        // Using special for loop by Java because I don't need to know the index
+        for (int i : arr) {
+           sum = sum + i;
+        }
         return sum;
     }
 
@@ -98,7 +100,7 @@ public class ArrayHelper {
      */
     public static int find(int[] arr, int target) {
         int index = -1;
-        for (int i = 0; i > arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
                 index = i;
                 return index; // breaks loop
@@ -115,8 +117,8 @@ public class ArrayHelper {
      */
     public static int max(int[] arr) {
         int max = arr[0];
-        for (int i = 1; i > arr.length; i++) {
-            if (arr[i] < max) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
                 max = arr[i];
             }
         }
@@ -132,7 +134,7 @@ public class ArrayHelper {
     public static int min(int[] arr) {
         int min = arr[0];
         for (int i = 1; i < arr.length; i++)  {  
-            if (arr[i] > min) {
+            if (arr[i] < min) {
                 min = arr[i];
             }
         }  
