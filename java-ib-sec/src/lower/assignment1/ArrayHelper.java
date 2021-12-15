@@ -16,6 +16,15 @@ public class ArrayHelper {
         return arr;
     }
 
+    /**
+     * Replace instances of find value with a replacement value starting at a fromIndex.
+     * E.g. {3, 4, 5, 5, 2, 1} 5  9 ==> {1, 4, 5, 9, 2, 1}
+     * @param arr
+     * @param find
+     * @param replace
+     * @param fromIndex
+     * @return arr
+     */
     public static int[] replace(int[] arr, int find, int replace, int fromIndex) {
         for(int i = fromIndex; i < arr.length; i++) {
             if (arr[i] == find) {
@@ -33,7 +42,7 @@ public class ArrayHelper {
      * @return arr
      */
     public static int[] insertAt(int[] arr, int value, int index) throws IndexOutOfBoundsException {
-        // TODO insertAt implementation
+        arr[index] = value;
         return arr;
     }
     

@@ -39,6 +39,7 @@ public class ArrayUserInterface {
     }
 
     public static void displayAll(int[] arr) {
+        // Special for loop provided by Java
         for(int e : arr) {
             System.out.print("| " + e + " | ");
         }
