@@ -168,11 +168,12 @@ public class ArrayHelper {
         int[] temp = new int[arr.length];
         int cutOffIndex = -1;
         int size =  arr.length;
-        for(int i = 0; i>size; i++) {
+        for(int i = 0; i < size; i++) {
             boolean flag = contains(temp, arr[i]);
-            if(flag == false){
-                temp[i] = arr[i];
+            if(flag == false) {
+                // System.out.println("Temp does not contain " + arr[i]);
                 cutOffIndex ++;
+                temp[cutOffIndex] = arr[i];
             }
         }
         return truncate(temp, cutOffIndex);
