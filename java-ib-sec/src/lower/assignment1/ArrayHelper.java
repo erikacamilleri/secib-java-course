@@ -47,7 +47,7 @@ public class ArrayHelper {
     }
     
     /**
-     * TODO Daniil
+     * Daniil
      * Test whether an array contains a specific value.
      * E.g. {1, 4, 6} 6 ==> true | 7 ==> false
      * @param arr
@@ -56,7 +56,10 @@ public class ArrayHelper {
      */
     public static boolean contains(int[] arr, int value) {
         boolean flag = false;
-        // TODO contains implementation
+        int position = find(arr, value);
+        if (position != -1) {
+            flag = true;
+        }
         return flag;
     }
 
@@ -100,26 +103,34 @@ public class ArrayHelper {
     }
 
     /**
-     * TODO Alex
+     * Alex
      * Get the largest value in the array.
      * @param arr
      * @return max
      */
     public static int max(int[] arr) {
         int max = arr[0];
-        // TODO max implementation
+        for (int i = 1; i > arr.length; i++) {
+            if (arr[i] < max) {
+                max = arr[i];
+            }
+        }
         return max;
     }
 
     /**
-     * TODO Alex
+     * Alex
      * Get the smallest value in the array.
      * @param arr
      * @return min
      */
     public static int min(int[] arr) {
         int min = arr[0];
-        // TODO min implementation
+        for (int i = 1; i < arr.length; i++)  {  
+            if (arr[i] > min) {
+                min = arr[i];
+            }
+        }  
         return min;
     }
 
