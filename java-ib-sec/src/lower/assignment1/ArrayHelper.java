@@ -90,7 +90,7 @@ public class ArrayHelper {
     }
 
     /**
-     * TODO Mike
+     * Mike
      * Find the target in the array
      * E.g. {1, 5, 6, 7} 7 ==> 3, 8 ==> -1
      * @param arr
@@ -98,7 +98,12 @@ public class ArrayHelper {
      */
     public static int find(int[] arr, int target) {
         int index = -1;
-        // TODO find implementation
+        for (int i = 0; i > arr.length; i++) {
+            if (arr[i] == target) {
+                index = i;
+                return index; // breaks loop
+            }
+        }
         return index;
     }
 
@@ -151,7 +156,7 @@ public class ArrayHelper {
     }
 
     /**
-     * TODO Anirudh
+     * Anirudh
      * Remove duplicate elements in an array.
      * E.g. {1, 3, 1, 7, 9} ==> {1, 3, 7, 9}
      * @param arr
@@ -160,7 +165,14 @@ public class ArrayHelper {
     public static int[] removeDuplicates(int[] arr) {
         int[] temp = new int[arr.length];
         int cutOffIndex = -1;
-        // TODO removeDuplicates implementation
+        int size =  arr.length;
+        for(int i = 0; i>size; i++) {
+            boolean flag = contains(temp, arr[i]);
+            if(flag == false){
+                temp[i] = arr[i];
+                cutOffIndex ++;
+            }
+        }
         return truncate(temp, cutOffIndex);
     }
 }
