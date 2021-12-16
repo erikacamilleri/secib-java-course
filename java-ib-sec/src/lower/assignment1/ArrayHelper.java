@@ -1,7 +1,6 @@
 package lower.assignment1;
 
 public class ArrayHelper {
-    
     /**
      * Fill an array with the same value.
      * E.g. { , , , } -1 ==> { -1, -1, -1, -1} 
@@ -171,8 +170,7 @@ public class ArrayHelper {
         for(int i = 0; i < size; i++) {
             boolean flag = contains(temp, arr[i]);
             if(flag == false) {
-                // System.out.println("Temp does not contain " + arr[i]);
-                cutOffIndex ++;
+                cutOffIndex++;
                 temp[cutOffIndex] = arr[i];
             }
         }

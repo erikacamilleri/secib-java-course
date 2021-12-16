@@ -1,7 +1,6 @@
 package lower.assignment1;
 
 public class ArrayUserInterface {
-
     public static void main(String[] args) {
         // on board user (say welcome)
 
@@ -15,7 +14,7 @@ public class ArrayUserInterface {
         //      if option requires fill before
         //          ask user to fill in elements
         //      end if
-        //      perform option
+        //      perform option (switch)
         //      output result
         //      ask user for another option or 'q' to quit
         // endwhile
