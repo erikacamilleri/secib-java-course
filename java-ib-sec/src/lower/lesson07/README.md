@@ -120,6 +120,22 @@ The above will come in very handy in the future. I promise.
 
 ## Methods that accept an array of values
 
+Remember when I said that you need to treat programming like playing with lego? Even though we did not cover this aspect in this lesson, I should point out that just like you can declare methods that accept simple parameters, methods can also accept array parameters!
+
+```
+// method accepting simple parameter 
+public void doublePoints(int points) {
+    System.out.println(points * 2);
+}
+
+// method accepting array parameter (you should assume that the array passed in is filled in)
+public void doublePoints(int[] points) {
+    for (int i = 0; i < points.length; i++) {
+        System.out.println(points[i] * 2);
+    }
+}
+```
+
 ## Methods that return an array of values
 
 # Keywords

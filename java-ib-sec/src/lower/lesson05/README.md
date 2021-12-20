@@ -112,7 +112,7 @@ From now on, we are going to treat programming like lego so that you will realis
 
 We finally have enough to just get started. Yes we will meet cool new blocks along the way. Just from now on we will always be solving *real* problems. Buckle up and get your math on because you are in for a ride!
 
-## CCS 4.1.1 - 4.1.3 Thinking Procedurally (Pages 183 - 184)
+## CCS 4.1.6 - 4.1.8 Thinking Procedurally (Pages 183 - 184)
 
 - The Divide and Conquer approach is generally good to tackle complex problems.
 - One big problem can be split into multiple smaller problems.

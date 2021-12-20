@@ -3,7 +3,6 @@ package lower.lesson07;
 public class Arrays {
 
     public static void lesson() {
-
         /**
          * 1. Declare an array variable.
          * 2. Allocate a fixed amount of memory to store the array elements.

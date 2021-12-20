@@ -4,7 +4,7 @@ This piece of work will contribute towards your Mid-Year grade.
 
 # A utility program to understand arrays
 
-You will be writing a utility program for programmers! For easy testing you will provide a **Menu Driven Interface** for all of the functionality in the `ArrayHelper`. 
+You will be writing a utility program for programmers! For easy testing you will provide a **Menu Driven Interface** for all of the functionality in the `ArrayHelper`.
 
 You will also need to *add value* by providing one additional utility function of your own choice. It is important that you are able to justify why the method you chose is important. My suggestion is to pick a domain (math, game, data) of your interest (your own independent research is required, the IB book can be really helpful here).
 
@@ -45,4 +45,4 @@ A zipped folder containing:
 
 ## Deadline
 
-Friday 22nd January 2022
+Friday 21st January 2022
