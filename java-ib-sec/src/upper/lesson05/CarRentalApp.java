@@ -1,9 +1,5 @@
 package upper.lesson05;
 
-import java.io.File;
-import java.util.ArrayList;
-
-import upper.lesson05.entity.Car;
 import upper.lesson05.entity.Location;
 import upper.lesson05.record.LocationEntityFile;
 

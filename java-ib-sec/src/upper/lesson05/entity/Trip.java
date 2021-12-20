@@ -12,4 +12,26 @@ public class Trip {
 
     private Car car; // save the car id in the file
 
+    public Trip (Date pickupDate, Date dropOffDate, Location location, Car car) {
+        this.pickupDate = pickupDate;
+        this.dropOffDate = dropOffDate;
+        this.location = location;
+        this.car = car;
+    }
+
+    public Date getPickupDate() {
+        return this.pickupDate;
+    }
+
+    public Date getDropOffDate() {
+        return this.dropOffDate;
+    }
+
+    public Location getLocation() {
+        return this.location;
+    }
+
+    public Car getCar() {
+        return this.car;
+    }
 }
