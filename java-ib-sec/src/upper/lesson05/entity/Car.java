@@ -2,9 +2,10 @@ package upper.lesson05.entity;
 
 import java.util.ArrayList;
 
+import upper.lesson05.entity.trait.DeletableRecord;
 import upper.lesson05.record.CarEntityFile;
 
-public class Car {
+public class Car extends DeletableRecord {
 
     public int id;
 

@@ -14,19 +14,18 @@ import upper.lesson04.logging_system.subscriber.LogEventSubscriber;
  * https://www.w3schools.com/java/java_files_create.asp
  */
 public class FileWriteObserver implements LogEventObserver {
-
     protected File logFile;
 
     public FileWriteObserver() {
       this.logFile = createTodaysLogFile();
     }
-
+    
     private File createTodaysLogFile() {
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Date date = new Date();
         String todaysLogFileName = "log_" + dateFormat.format(date) + ".txt";
         try {
-            File logFile = new File("java-ib-sec/log", todaysLogFileName);
+            File logFile = new File("java-ib-sec", todaysLogFileName);
             logFile.createNewFile();
             return logFile;
         } catch (IOException e) {

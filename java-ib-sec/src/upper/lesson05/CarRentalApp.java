@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import upper.lesson05.entity.Car;
 import upper.lesson05.entity.Location;
-import upper.lesson05.record.CarEntityFile;
 import upper.lesson05.record.LocationEntityFile;
 
 public class CarRentalApp {
@@ -67,5 +66,9 @@ public class CarRentalApp {
         Location location = new Location("Birgu", 23.456789093, 45.99907777);
         LocationEntityFile locationFile = new LocationEntityFile();
         locationFile.save(location);
+    }
+
+    private void boot() {
+        
     }
 }

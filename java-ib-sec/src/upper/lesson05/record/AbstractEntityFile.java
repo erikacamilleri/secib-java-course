@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
-public abstract class AbstractEntityFile<T> {
+import upper.lesson05.record.contract.Pagination;
+
+public abstract class AbstractEntityFile<T> implements Pagination {
 
     private final String DIR = "database";
 

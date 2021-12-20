@@ -63,5 +63,4 @@ public class LocationEntityFile extends AbstractEntityFile<Location> {
             this.insert();
         }
     }
-    
 }
