@@ -124,12 +124,12 @@ Remember when I said that you need to treat programming like playing with lego? 
 
 ```
 // method accepting simple parameter 
-public void doublePoints(int points) {
+public static void doublePoints(int points) {
     System.out.println(points * 2);
 }
 
 // method accepting array parameter (you should assume that the array passed in is filled in)
-public void doublePoints(int[] points) {
+public static void doublePoints(int[] points) {
     for (int i = 0; i < points.length; i++) {
         System.out.println(points[i] * 2);
     }
@@ -138,7 +138,99 @@ public void doublePoints(int[] points) {
 
 ## Methods that return an array of values
 
+Much like a method can return a value, a method can return (give as feedback) more complex types such as the array. 
+
+As an example, let us enhance the doublePoints, so that it actually gives back the points doubled in value, rather than output them in the console. Like this, methods are so much more useful and reusable.
+
+```
+// method returning a single value
+public static void doublePoints(int points) {
+    return points * 2; // the 
+}
+
+// method returning an array (collection) of values
+public static void doublePoints(int[] points) {
+    for (int i = 0; i < points.length; i++) {
+        points[i] = points[i] * 2; // tip: points[i] *= 2; is a shorter way of doubling the particular element
+    }
+    return points; // giving back the array of points
+}
+```
+
+## Remember
+
+Worth revising how to call a method, and a reminder to pass in values that are going to be copied over to the method parameters. We are taking `doublePoints()` as an example:
+
+```
+int[] points = {1, 5, 7};
+int[] doublePoints = doublePoints(points); // making the method call and passing in points, it will give back an array
+
+// the result
+for(int dp : doublePoints) {
+    System.out.println(dp);
+}
+```
+
+Expected output:
+
+```
+2
+10
+14
+```
+
+## Appreciating the power of methods (or sub procedures)
+
+If someone had to ask me to draw a computer in ten seconds... this is what I would draw:
+
+![Input, Process, Output, Feedback](https://image.shutterstock.com/image-illustration/input-process-output-feedback-diagram-260nw-1982606642.jpg)
+
+*Link: We will be covering the above in more detail in Topic 7.*
+
+Everything that is related to computers obeys this model, therefore if we want to exercise computational thinking then we always have to keep the above in mind when: 
+
+1. Designing algorithms for computers; 
+2. Learning a programming language.
+
+An entire program obviously takes the form of: input, process, output.
+
+But think about it, a method also can take the form of: input, process, output.
+
+```
+public static void multiply(int a, int b) {
+    return a * b; // feedback
+}
+
+// usage
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt(); // user input
+int b = sc.nextInt(); // user input
+
+// do process
+// multiply takes two numbers as inputs... returns a * b
+int result = multiply(a, b) // the result is feedback
+
+// We can either take in the feedback and do something with it (continue processing)
+if (result > 10) {
+    /* do something if result is greater than 10 */
+}
+
+// Or just spit it out as output to the user
+System.out.println("Result: " + result);
+```
+
+The modular nature of computers and programming makes it better for engineers to:
+1. Solve complex problems by practicing divide and conquer.
+2. Collaborate with other developers, each developer can work on different procedures.
+3. Re-use other people's code by making use of software libraries.
+   
+# 4.1.17 Thinking Abstractly
+
+The array provides developers with an abstraction of the organisation of our memory. As programmers, we do not care about the registers, physical/logical memory addresses. All we care about is that we have room in computer memory to store data can can be processed by the algorithm we write.
+
 # Keywords
 - Data structure
 - Collection
 - Contiguous
+
+*More information about arrays in !(assignment1)[https://github.com/erikacamilleri/secib-java-course/tree/main/java-ib-sec/src/lower/assignment1]*
