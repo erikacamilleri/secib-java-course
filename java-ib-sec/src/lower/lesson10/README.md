@@ -67,7 +67,7 @@ I was really inspired by how BlueJ gives a visual representation of variable sco
 - We always declared and assigned variables within small short-lived scopes.
 - We used method blocks to organise our code, to keep the main() minimal and clean.
 
-Why bother saying these things? You guessed it, it will slowly turn into something different and much more complex. You can take a sneak peak at the `upper` code.
+Why bother saying these things? You guessed it, it will slowly turn into something different and much more complex. You can take a sneak peak at the code in the `upper` folder.
 
 # Exercise
 
