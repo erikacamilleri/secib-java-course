@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class MathPal {
     
     public static void main(String[] args) {
-        // onboarding();
-        // chooseOption();
-        // timestable(3);
-        oddOrEven();
+        onboarding();
+        chooseOption();
     }
 
     public static void onboarding() {

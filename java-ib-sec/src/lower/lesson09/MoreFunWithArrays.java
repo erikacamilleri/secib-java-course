@@ -3,12 +3,14 @@ package lower.lesson09;
 import java.util.Random;
 
 public class MoreFunWithArrays {
-
+    
     /**
      * This is an adaptation of the flow chart in May 2021 q 14.
      */
     public static void highestAndLowestNumber() {
+        
         int highest = 0;
+        
         int lowest = 0;
         
         // Make sure to allocate enough memory to store your data collection
@@ -40,6 +42,7 @@ public class MoreFunWithArrays {
         for (int n : numbers) {
             System.out.print(n + ", ");
         }
+
         System.out.println();
         System.out.println("Highest: " + highest + " Lowest: " + lowest);
     }
