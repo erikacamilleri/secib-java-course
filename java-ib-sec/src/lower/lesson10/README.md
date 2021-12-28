@@ -10,9 +10,9 @@ In Java, our organised thinking translates to *blocks of code*, a block is a gro
 
 In Visual Studio Code, each block can be opened or closed kind of how you would treat a chest of drawers so that you can abstract out unncessary details if you want to focus on something in particular.
 
-Our most complex program to date is probably `MathPal.java`, so I made a short video on how blocks can be treated in Visual Studio Code:
+Our most complex program to date is probably `MathPal.java`, so I made a short screen recording on how blocks can be treated in Visual Studio Code. [Watch coding blocks in VsCode](https://screenrec.com/share/nVeS4zsXyw).
 
-[![Coding Blocks in VsCode]](https://screenrec.com/share/nVeS4zsXyw)
+In certain IDEs geared for beginners, like Blue J, code blocks are visually represented using various colours:
 
 ## Variable scope
 
