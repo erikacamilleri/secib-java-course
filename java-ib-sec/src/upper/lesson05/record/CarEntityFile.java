@@ -22,7 +22,7 @@ public class CarEntityFile extends AbstractEntityFile<Car> {
 
     @Override
     protected int getRecordSize() {
-        return 68;
+        return 71;
     }
 
     @Override
@@ -32,6 +32,7 @@ public class CarEntityFile extends AbstractEntityFile<Car> {
         record += String.format("%1$" + 25 + "s", this.car.model) + this.DELIMITER;
         record += String.format("%1$" + 25 + "s", this.car.colour) + this.DELIMITER;
         record += String.format("%1$" + 10 + "s", this.car.licensePlate) + this.DELIMITER;
+        record += String.format("%1$" + 2 + "s", this.car.isDeleted() ? "1" : "0") + this.DELIMITER;
         return record;
     }
 
@@ -42,8 +43,12 @@ public class CarEntityFile extends AbstractEntityFile<Car> {
         String model = fields[1].trim();
         String colour = fields[2].trim();     
         String licensePlate = fields[3].trim();
+        int isDeleted = Integer.parseInt(fields[4].trim());
         Car car = new Car(model, colour, licensePlate); 
         car.id = id;
+        if (isDeleted == 1) {
+            car.delete();
+        }
         return car;
     }
 

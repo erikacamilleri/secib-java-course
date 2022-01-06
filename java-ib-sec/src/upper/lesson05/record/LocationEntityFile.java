@@ -8,7 +8,7 @@ public class LocationEntityFile extends AbstractEntityFile<Location> {
 
     private Location location;
 
-    protected static final int RECORD_SIZE = 134;
+    protected static final int RECORD_SIZE = 138;
 
     protected static final String FILE_NAME = "locations.txt";
 
