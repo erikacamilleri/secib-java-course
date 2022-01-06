@@ -10,7 +10,7 @@ You will also need to *add value* by providing one additional utility function o
 
 ## Why are arrays so important?
 
-Arrays are among the oldest and most important data structures, and are used by almost **every** program (we do not exceggerate). Reason being, they are often a base to implement many other data structures, such as Lists, Stacks and Queues. Arrays are so popular because they are efficient to use primarily because:
+Arrays are among the oldest and most important data structures, and are used by almost **every** program (we do not exceggerate). Reason being, they are often a base to implement many other data structures, such as Lists, Stacks and Queues. Arrays are so popular because they are efficient to use:
 1. Arrays take advantage of the computer organization. The data structure conveniently gives programmers an *abstraction* of the computer's memory and secondary storage.
 2. Processors, especially vector processors, are often optimized for **array operations**.
 
