@@ -95,8 +95,6 @@ Include the above algorithm in VariableScopeDemo (use any approach you like) and
 3. In your approach, when is your SUM variable destoryed?
 4. Are you able to run the algorithm twice in a single program instance? If so, is the SUM result the same or different? Making reference to scope, explain your results.
 
-# A note on readable code and conventions 
-
 # Critical skills
 
 I am going to do my best to keep things as simple and progress as logically as possible, but this is not easy. From now, complexity will snowball. Please, before you move on make sure you know...
