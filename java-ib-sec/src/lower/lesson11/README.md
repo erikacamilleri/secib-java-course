@@ -1,0 +1,79 @@
+# Introducing Classes and Objects
+
+## Class Fundamentals
+
+All activity in Java happens within a class so technically we have been making use of them since the very beginning. Just, thus far, our classes have been really simple and we adopted a more imperative style approach. To explain, we have been using classes to just organise our code.
+
+It is finally time to really get into Object-Oriented Programming, and discover the features that make Java so popular amongst back-end developers. 
+
+## Basics
+
+You need to understand two fundamental facts...
+
+- A class is a template that defines the form of an object.
+- An object is a particular instance of a class.
+
+The class is a *logical abstraction* and does not really take memory space during program execution. It is only until instances have been created (as concrete representations) that we start to consume memory. 
+
+We will learn that classes contain variables, also known as object properties, and methods, which we sometimes refer to as behaviour. 
+
+## Define your first class
+
+A class is created by using the keyword `class`. As we have seen previously it is very possible to create classes with just methods. Similarly, it is technically possible to just create classes that contain only variables. However, we generally create objects that model real world objects and processes so it is very common to define classes that contain both variables and methods.
+
+```
+public class Soldier {
+    // declare variables
+    public int health;
+
+    // declare methods
+    public void reduceHealth() {
+        this.health = this.health - 1;
+    }
+}
+```
+
+In previous lessons we have designed an entity for *Soldier*, and today we are going to translate it into a class in Java. It will store information about its health, minor profile details, inventory of weapons and keep track of the current weapon being used by the character.
+
+## Create your first object
+
+In Java, anything that is not a primitive data type is an object therefore without really appreciating it perhaps, we already gained some experiencing creating physical objects. Have a look at the code snippets from previous lessons:
+
+```
+// from lesson 3
+Scanner sc = new Scanner(System.in);
+
+// from lesson 4
+String myName = new String("Erika Camilleri");
+
+// from lesson 7
+double[] studentRunTimes;
+studentRunTimes = new double[5];
+```
+
+If you look closely all snippets have one thing in common... the `new` keyword. The `new` operator allocates memory for an object and returns a reference to it during run-time.
+
+Let's look at the creation of a `Soldier` instance as an example, the following resides in <b>SoldierFactory.java</b>:
+
+```
+Soldier jack = new Soldier(); // declare and create physical instance of Soldier
+```
+
+The above declaration does two things:
+1. Declares a variable called *jack* of the type *Soldier*
+2. Creates a physical copy of the objeect and assigns a unique reference to *jack*
+
+To really showcase the above, we could have rewritten the statement above to show the steps individually:
+
+```
+Solder jack;
+jack = new Soldier();
+```
+
+# Good Habits
+
+- A class should define one and only one logical entity. Putting a lot of unrelated information in a single object goes against the principle.
+- Object classes should not declare the main method. You should always have a separate class to declare the entry point of your program.
+- Have another class to create object instances.
+
+
