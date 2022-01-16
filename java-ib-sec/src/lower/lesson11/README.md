@@ -69,6 +69,22 @@ To really showcase the above, we could have rewritten the statement above to sho
 Solder jack;
 jack = new Soldier();
 ```
+# Assigning values to properties and calling object methods
+
+After you created a physical copy of a class, then you should have access to properties and make use of them in your program. For example assigning a value to a property:
+
+```
+jack.name = "Jack"; // assigning a value to a property
+```
+
+However as already mentioned in previous lessons it is a very good idea to use object methods to change properties e.g.
+
+```
+jack.reduceHealth();
+System.out.println(jack.health); // should print out 3
+```
+
+But don't worry too much about this point because we will be diving into OOP slowly. For now, we want to get comfortable with the basics.
 
 # Good Habits
 

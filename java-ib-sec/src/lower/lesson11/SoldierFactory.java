@@ -34,16 +34,8 @@ public class SoldierFactory {
          /**
           * Display all soldiers
           */
-          display(jack);
+          jack.display();
+          
           // TODO display Amanda
-    }
-
-    public static void display(Soldier soldier) {
-        System.out.println("**********************************");
-        System.out.println("********* Soldier Object *********");
-        System.out.println("**********************************");
-        System.out.println("Name: " + soldier.name);
-        System.out.println("Strength: " + soldier.strength);
-        System.out.println("Weapons: " + soldier.weapons[0] + ", ");
     }
 }
