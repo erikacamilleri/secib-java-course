@@ -17,7 +17,7 @@ public class Soldier {
 
     public int health;
 
-    // TODO property for currentWeaponIndex
+    public int currentWeaponIndex;
 
     public String name;
     
@@ -36,7 +36,10 @@ public class Soldier {
         }
     }
 
-    // TODO method to getCurrentWeapon (hint: you need to use the return keyword)
+    // method to getCurrentWeapon (hint: you need to use the return keyword)
+    public String getCurrentWeapon() {
+        return weapons[this.currentWeaponIndex];
+    }
 
     public void display() {
         System.out.println("**********************************");
@@ -44,6 +47,8 @@ public class Soldier {
         System.out.println("**********************************");
         System.out.println("Name: " + this.name);
         System.out.println("Strength: " + this.strength);
+        System.out.println("Weakness: " + this.weakness);
         System.out.println("Weapons: " + this.weapons[0] + ", ");
+        System.out.println("Current weapon: " + this.getCurrentWeapon());
     }
 }

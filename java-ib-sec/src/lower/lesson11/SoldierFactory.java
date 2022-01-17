@@ -17,24 +17,32 @@ public class SoldierFactory {
         
         jack.name = "Jack"; // assign a value for name variable/property
         
-        // TODO assign a value for strength and weakness
+        // assign a value for strength and weakness
+        jack.strength = "Vision";
+        
+        jack.weakness = "Speed";
         
         jack.weapons[0] = "M82";
 
-        // TODO give Jack a couple of more weapons
+        // give Jack a couple of more weapons
+        jack.weapons[1] = "rifle";
 
-        // TODO assign a value for currentWeaponIndex
+        jack.currentWeaponIndex = 0;
 
         /**
          * Create an instance of Soldier for a character Amanda.
          * ---------------------------------------------------------------------------------
          */
-        // TODO object instance for Amanda
+        Soldier amanda = new Soldier();
+        
+        amanda.name = "Amanda";
 
          /**
           * Display all soldiers
           */
           jack.display();
+          
+          amanda.display();
           
           // TODO display Amanda
     }
