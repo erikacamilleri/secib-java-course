@@ -35,6 +35,4 @@ Object-oriented design helps us acheive <b>seperation of concerns</b>, so rather
 
 For example: a class for the number stack; a class for the logic of evaluating postfix notation and finally have a class for the `main()`.
 
-
-
-<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/postfix_evaluation_uml?raw=true" width="auto" height="300"/>
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/main/java-ib-sec/img/postfix_evaluation_uml.PNG" width="auto" height="300"/>
