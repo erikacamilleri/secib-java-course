@@ -19,7 +19,7 @@ public class SoldierFactory {
         
         // assign a value for strength and weakness
         jack.strength = "Vision";
-        
+
         jack.weakness = "Speed";
         
         jack.weapons[0] = "M82";

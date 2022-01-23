@@ -51,4 +51,4 @@ public class Soldier {
         System.out.println("Weapons: " + this.weapons[0] + ", ");
         System.out.println("Current weapon: " + this.getCurrentWeapon());
     }
-}
+ }
