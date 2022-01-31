@@ -30,4 +30,4 @@ Unfortunately, Java does not give us a nice and easy function to accept a charac
 
 `char c = sc.next().charAt(0);`
 
-You will probably understand the line above much better once we talk about another whidely used class called the `String` class in the next lesson!
+You will probably understand the line above much better once we talk about another widely used class called the `String` class in the next lesson!
