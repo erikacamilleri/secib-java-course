@@ -72,4 +72,12 @@ public class SimpleJobQueue {
             return rear;
         }
     }
+
+    public void work() {
+       while(!isEmpty()) {
+           SimpleJob currentJob = jobs[head];
+           currentJob.start();
+           dequeue();
+       }
+    }
 }
