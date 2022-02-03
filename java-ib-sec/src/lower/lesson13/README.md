@@ -1,6 +1,6 @@
 # Arrays as static queues
 
-<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/photo_queue_0302_2022?raw=true" width="auto" height="300"/>
+<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/photo_queue_0302_2022.PNG?raw=true" width="auto" height="300"/>
 
 ## Basic characteristics of a queue (short version)
 
