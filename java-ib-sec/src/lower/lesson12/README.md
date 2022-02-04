@@ -1,4 +1,4 @@
-# Arrays as static stacks
+# Arrays as static stacks ACS 5.1.10 pg 19
 
 ## Basic characteristics of a stack (short version)
 
@@ -28,6 +28,23 @@ Back when we studied recursion we looked at the Towers of Hanoi algorithm. We ca
 However, I feel the rules of the game make tracing this algorithm really daunting with little benefit (remember last time?). There is code for this in the book...
 
 We will be tracing/implementing [Postfix Evaluation](https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/), which I believe is easier to understand and much more fun to trace. 
+
+# Testing PostfixEvaluation
+
+```
+public class App {
+    public static void main(String[] args) throws Exception {
+        
+        PostfixEvaluation pe = new PostfixEvaluation();
+        
+        pe.expression = "234*+5+";
+        
+        int result = pe.evaluate();
+
+        System.out.println("Result is: " + result);
+    }
+}
+```
 
 # Object-oriented Design
 

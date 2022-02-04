@@ -17,7 +17,6 @@ public class NumberStack {
     /**
      * ----- METHODS ---------------------------------------------------------------------
      */
-
     // adds a number to the top of the stack
     public void push(int n) {
         this.topIndex = this.topIndex + 1;

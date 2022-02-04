@@ -1,4 +1,4 @@
-# Arrays as static queues
+# Arrays as static queues ACS 5.1.10 pg 19
 
 <img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/photo_queue_0302_2022.PNG?raw=true" width="auto" height="300"/>
 
@@ -91,6 +91,24 @@ If you don't explicity specify a constructor in the class, (like NumberStack.jav
 
 ### No Parameters
 
+We had said that objects have state and behaviour. When an object is created perhaps you would need it to have a particular starting point. In order to do that, you might need to set properties with default values or pehaps do some basic logic for set-up.
+
+The below is actual code of the `String` class
+
 ### With Parameters
 
+This is the most common kind of constructor that you would come accross and you would be implementing these very often. In fact, even in the early days we have made use of constructors and passed in information:
+
+```
+// recall from lesson 3 we are passing in System.in in the Scanner object
+Scanner sc = new Scanner(System.in);
+
+// recall from lesson 4 we are passing in a hard coded value in the String object
+String myName = new String("Erika Camilleri");
+```
+
+Using parameterised constructors we can instansiate objects with different starting states according to the needs of the program.
+
 ## Array of Objects
+
+In lesson 7 you learnt how to create arrays of simple types like `int` and `double`. In this lesson you will find that it is very possible (and indeed necessary) to create arrays of *objects*. 
