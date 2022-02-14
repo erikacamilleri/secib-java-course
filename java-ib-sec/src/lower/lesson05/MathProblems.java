@@ -46,6 +46,28 @@ public class MathProblems {
     }
 
     /**
+     * Anything that is recursive can be iterative.
+     */
+    public static void fibonacci() {
+        int n = 7; // you can edit the value of the n term here
+        int fn = 0;
+        int fnMinus1 = 0;
+        int fnMinus2 = 0;
+
+        for (int i = 0; i <= n; i++) {
+            if (i == 0 || i == 1) {
+                fn = 1;
+            } else {
+                fn = fnMinus1 + fnMinus2;
+                fnMinus2 = fnMinus1;
+            }
+            fnMinus1 = fn;
+        }
+
+        System.out.println("Fibonacci " + n + "th term: " + fn);
+    }
+
+    /**
      * https://www.youtube.com/watch?v=wTlw7fNcO-0
      * @param n
      * @param step
