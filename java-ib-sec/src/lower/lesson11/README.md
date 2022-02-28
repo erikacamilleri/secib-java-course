@@ -17,6 +17,8 @@ The class is a *logical abstraction* and does not really take memory space durin
 
 We will learn that classes contain variables, also known as object properties, and methods, which we sometimes refer to as behaviour. 
 
+*This links with CCS pages 292 - 294, D.1.2 Distinguishing between object and instantiation.*
+
 ## Define your first class
 
 A class is created by using the keyword `class`. As we have seen previously it is very possible to create classes with just methods. Similarly, it is technically possible to just create classes that contain only variables. However, we generally create objects that model real world objects and processes so it is very common to define classes that contain both variables and methods.
@@ -61,7 +63,7 @@ Soldier jack = new Soldier(); // declare and create physical instance of Soldier
 
 The above declaration does two things:
 1. Declares a variable called *jack* of the type *Soldier*
-2. Creates a physical copy of the objeect and assigns a unique reference to *jack*
+2. Creates a physical copy of the object and assigns a unique reference to *jack*
 
 To really showcase the above, we could have rewritten the statement above to show the steps individually:
 

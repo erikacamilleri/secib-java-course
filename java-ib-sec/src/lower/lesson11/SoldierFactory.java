@@ -43,7 +43,5 @@ public class SoldierFactory {
           jack.display();
           
           amanda.display();
-          
-          // TODO display Amanda
     }
 }
