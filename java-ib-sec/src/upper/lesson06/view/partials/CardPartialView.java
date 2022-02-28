@@ -8,7 +8,7 @@ public class CardPartialView extends JPanel {
     
     public CardPartialView () {
         setPreferredSize(new DimensionUIResource(200, 300));
-        setBackground(new ColorUIResource(100, 200, 200));;
+        setBackground(new ColorUIResource(100, 200, 200));
         setVisible(true);
     }
 }
