@@ -176,4 +176,34 @@ public class ArrayHelper {
         }
         return truncate(temp, cutOffIndex);
     }
+
+    /**
+     * Very important to study
+     * @param arr
+     * @return
+     */
+    public static int[] bubbleSort(int[] arr) {
+        int iterations = 1;
+        while (iterations < arr.length) {
+            int j = 0;
+            while (j <= (arr.length - 2)) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j + 1];
+                    arr[j + 1] = arr[j];
+                    arr[j] = temp;
+                }
+                j++;
+            }
+            iterations++;
+            printElements(arr);
+        }
+        return arr;
+    }
+
+    public static void printElements(int[] arr) {
+        for(int e : arr) {
+            System.out.print(e + ", ");
+        }
+        System.out.println();
+    }
 }
