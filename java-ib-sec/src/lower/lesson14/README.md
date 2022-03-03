@@ -1,5 +1,27 @@
 # Two Dimensional Array
 
+By now you should have learnt that arrays are really convenient to group data of a similar nature.
+We have also seen that arrays can store anything. In fact, each element in an array can store another array, thus making it a 2D array! The best way to visualise this is a grid like the image shows below. 
+
+<img src="https://www.cs.ubc.ca/~pcarter/cs189/image/2darrayrc.png"/>
+
+Each element labelled as "rows" is storing an array of three elements:
+
+<pre>
+row[0] ==> {1, 2, 3}
+
+row[1] ==> {4, 5, 6}
+</pre>
+
+Why is this useful? 
+
+We handle a lot of data that tends to be represented in a tabular format. Some examples:
+
+- Timetable
+- Tic Tac Toe
+- Checker Board
+
+
 # Task - Linear Search (Again)
 
 # Method Overloading
