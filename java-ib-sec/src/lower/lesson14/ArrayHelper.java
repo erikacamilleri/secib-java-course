@@ -1,5 +1,7 @@
 package lower.lesson14;
 
+import java.util.AbstractMap.SimpleEntry;
+
 public class ArrayHelper {
     /**
      * Fill an array with the same value.
@@ -106,6 +108,25 @@ public class ArrayHelper {
             }
         }
         return index;
+    }
+
+    /**
+     * Ms Camilleri
+     * Find the target in the 2d array
+     * E.g. {{4, 8, 9, 2}, {1, 5, 6, 7}} 7 ==> 1, 3
+     * @param grid
+     * @return found? target index | null
+     */
+    public static SimpleEntry<Integer, Integer> find(int[][] grid, int target) {
+        SimpleEntry<Integer, Integer> gridIndex = null;
+        for (int row = 0; row < grid.length; row++) { // rows (outerloop)
+            for(int col = 0; col < grid[0].length; col++) { // colums (inner loop)
+                if (grid[row][col] == target) {
+                    gridIndex = new SimpleEntry<>(row, col);
+                }
+            }
+        }
+        return gridIndex;
     }
 
     /**
