@@ -1,5 +1,12 @@
 # Object Oriented Thinking
 
+<img src="https://miro.medium.com/max/800/1*_uqsddZ9YiOruN_Op6WN_g.png"/>
+
+Object-oriented programming is just a paradigm or *a way of thinking*. It is by no means a magic pill that will solve all problems. Object-oriented thinking does not apply to all problems we solve with computers. But... it *is very applicable* for various real-world (businessy) problems.
+
+Java was not created with the intention of kids learning it at school. It was created out of necessity. The imperative style of programming was becoming difficult to maintain when working on large-scale projects and building flexible systems for businesses. Professionals working within teams felt it was necessary for domain to be really present in the programs they write. To explain, if a programmer is building a system for an entire school then the program should "model" that micro environment. These kind of tasks were not very fun to do with programming languages like Pascal and Visual Basic. It does not mean that they were bad languages, just these tools did not cater to the ever changing needs of the time.
+
+If at the start of the course you were new to programming then you probably felt that steep learning curve. It will likely feel the same way with OOP. A way of thinking is something you learn and refine over a long period of time. There is also a lot of "jargon" that unfortunately you must study for the exam. I suggest to keep this nifty <a href="https://www.edureka.co/blog/cheatsheets/java-oop-cheat-sheet/" target="_blank">cheat sheet</a> handy during practical lessons. But don't let this discourage you. The words are only there so that developers can communicate effectively and I will be covering each and every term clearly. It is more important that you find your way to enjoy the journey.
 
 # Student Report Example
 
@@ -27,3 +34,5 @@ If you ever find yourself in a team of developers who *all* know UML (good luck 
 UML is huge but only class diagrams (the boxes with different compartments e.g. the soldier exercise we did on miro) are within the scope of IB.
 
 The most important aspect of UML is to describe how many classes and objects are working together to solve a real-world problem. This is especially important for your IA. 
+
+# Glossary
