@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public abstract class AbstractEntityFile<T> {
 
-    private final String DIR = "java-ib-sec/database";
+    private final String DIR = "secib-java-course/database";
 
     protected final String DELIMITER = ";";
 

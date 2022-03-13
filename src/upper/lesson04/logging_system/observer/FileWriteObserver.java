@@ -25,7 +25,7 @@ public class FileWriteObserver implements LogEventObserver {
         Date date = new Date();
         String todaysLogFileName = "log_" + dateFormat.format(date) + ".txt";
         try {
-            File logFile = new File("java-ib-sec", todaysLogFileName);
+            File logFile = new File("log", todaysLogFileName);
             logFile.createNewFile();
             return logFile;
         } catch (IOException e) {

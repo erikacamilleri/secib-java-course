@@ -1,15 +1,15 @@
-## Getting Started
+## Welcome
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository belongs to students embarking on IB Computer Science between 2021 and 2023. Welcome! This project will *grow* with you and you will find everything related to practical sessions here.
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The workspace contains the following folders:
 
-- `src`: the folder to maintain sources
+- `src`: the folder to maintain source code
 - `lib`: the folder to maintain dependencies
-- `database`: the folder to contain data files
-- `log`: the folder to contain data files
+- `database`: the folder that stores data files
+- `log`: the folder that contains log files to record exceptions and unwanted behaviour
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
