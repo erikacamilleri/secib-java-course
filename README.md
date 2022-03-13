@@ -30,4 +30,4 @@ Although this project will become more complex over time, you should always be a
 
 This repository should be a companion when working on your IA and studying for your exams.
 
-# Why is App.java empty?
+## Why is App.java empty?

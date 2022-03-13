@@ -55,6 +55,8 @@ The most important aspect of UML is to describe how many classes and objects are
 
 ## Student Report Example
 
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/09f8a36ac216650f594c2392b3a8fc203b9fbfb5/draw.io/lower15_student_report.drawio.svg"/>
+
 ### Parallel Arrays Technique 
 
 Multidimensional array to support different types
