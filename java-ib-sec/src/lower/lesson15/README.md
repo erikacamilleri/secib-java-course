@@ -32,24 +32,24 @@ The most important aspect of UML is to describe how many classes and objects are
 | **Object-Oriented Programming ()** | An approach to designing and building applications that are flexible, natural, well-crafted, and testable by focusing on objects that interact cleanly with one another. | Yes | 15 |
 | **Class** | A code file which acts as the blueprint, or cookie cutter, of an object by specifying the properties (characteristics) that and methods (behaviour). | Yes | 11 |
 | **Property** | A characteristic of an object defined in the class e.g. in a class called `Person` a property can be `eyeColour`. | Yes | 11 |
-| **Method** | The code that defines behaviour of a class normally contains a verb like `changeWeapon()` or `respawn()`. |  |  |
-| **Mutator** | Coming Soon |  |  |
-| **Accessor** | Coming Soon |  |  |
-| **Members** | The *properties* and *methods* of a class. |  |  |
-| **Instance** | The variable that stores a single object in memory that retains the state during a program's lifetime. This is created using the `new` keyword e.g. `Soldier jack = new Soldier();`. In this case `jack` is an instance of `Soldier`. |  |  |
-| **Overloading** | Coming Soon |  |  |
-| **Contract** | Coming Soon |  |  |
-| **Constructor** | The special method that is invoked using the `new` keyword when creating an *instance* of a *class*. Must share the same name of the class. |  |  |
+| **Method** | The code that defines behaviour of a class normally contains a verb like `changeWeapon()` or `respawn()`. | Yes | 11 |
+| **Mutator** | Coming Soon | No | -- |
+| **Accessor** | Coming Soon | No | -- |
+| **Members** | The *properties* and *methods* of a class. | Yes | 11 |
+| **Instance** | The variable that stores a single object in memory that retains the state during a program's lifetime. This is created using the `new` keyword e.g. `Soldier jack = new Soldier();`. In this case `jack` is an instance of `Soldier`. | Yes | 11  |
+| **Overloading** | Coming Soon | No | -- |
+| **Contract** | Coming Soon | No | -- |
+| **Constructor** | The special method that is invoked using the `new` keyword when creating an *instance* of a *class*. Must share the same name of the class. | Yes | 13 |
 | **Default Constructor** | A constructor with no parameters. If a *constructor* is not defined within a class then the default one will be invoked upon `new`. | Yes | 13 |
-| **Overriding** | Coming Soon |  |  |
-| **Interface** | Coming Soon |  |  |
-| **Abstraction** | The process of defining classes by simplifying reality as much as possible. This means leaving unimportant details out and focusing on what is truly necessary. |  |  |
-| **Encapsulation** | Coming Soon |  |  |
-| **Inheritance** | Coming Soon |  |  |
-| **Polymorphism** | Coming Soon |  |  |
-| **Aggregation** | Coming Soon |  |  |
-| **Association** | A relationship between two (or more) objects that normally reflects a relationship in the real world we are trying to model with OOP. |  |  |
-| **Composition** | Coming Soon |  |  |
+| **Overriding** | Coming Soon | No | -- |
+| **Interface** | Coming Soon | No | -- |
+| **Abstraction** | The process of defining classes by simplifying reality as much as possible. This means leaving unimportant details out and focusing on what is truly necessary. | Yes | 11 |
+| **Encapsulation** | Coming Soon | No | -- |
+| **Inheritance** | Coming Soon | No | -- |
+| **Polymorphism** | Coming Soon | No | -- |
+| **Aggregation** | Coming Soon | No | -- |
+| **Association** | A relationship between two (or more) objects that normally reflects a relationship in the real world we are trying to model with OOP. | Yes | 12 |
+| **Composition** | Coming Soon | No  | -- |
 
 # This Lesson
 
