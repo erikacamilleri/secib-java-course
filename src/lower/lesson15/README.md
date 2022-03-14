@@ -59,7 +59,36 @@ The most important aspect of UML is to describe how many classes and objects are
 
 ### Parallel Arrays Technique 
 
-Multidimensional array to support different types
+Parallel arrays are an implicit data structure that make use of multiple arrays to represent data records whereby a record is made of multiple fields and therefore different data types. This may sound like a very simplified version of a database table. Using this technique, in order to pull out one record, then you need to combine elements of each array *at the same index*.
+
+In order to represent the subject grades in the report we constructed two parallel arrays.
+
+```
+public String[] subjects;
+
+public int[][] questionGrades;
+```
+
+As the image below depicts, a student learns a number of subjects, and each subject has a number of tasks or questions the student must complete. Each task is graded individually.
+
+<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/parallel_arrays_technique.PNG?raw=true" width="auto" height="200"/>
+
+Having one 2D array to model the above will not work in Java because most probably we would want to use a `String` to store the subject and an `int` or some other data type to store the grade. A single array in Java can only store elements of the same data type.
+
+So we do the following:
+
+```
+subjects = {"Math", "Science", "English"};
+
+questionGrades = {
+    {10, 10, 10},
+    {20, 15, 5},
+    {30, 22, 7},
+};
+
+// combining all the grades for Math
+int mathTotal = questionGrades[0][0] + questionGrades[1][0] + questionGrades[2][0];
+```
 
 ### Arrays vs 2D arrays vs parallel arrays vs objects
 
