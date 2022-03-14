@@ -71,7 +71,7 @@ public int[][] questionGrades;
 
 As the image below depicts, a student learns a number of subjects, and each subject has a number of tasks or questions the student must complete. Each task is graded individually.
 
-<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/parallel_arrays_technique.PNG?raw=true" width="auto" height="200"/>
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/main/img/parallel_arrays_technique.PNG" width="auto" height="200"/>
 
 Having one 2D array to model the above will not work in Java because most probably we would want to use a `String` to store the subject and an `int` or some other data type to store the grade. A single array in Java can only store elements of the same data type.
 
