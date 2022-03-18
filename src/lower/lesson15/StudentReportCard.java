@@ -26,7 +26,7 @@ public class StudentReportCard {
 
     public int earlyDismissals;
 
-    
+
     public String address;
 
     public ImageIcon logo;
@@ -47,10 +47,27 @@ public class StudentReportCard {
      /**
      * --------- METHODS ----------------------------------
      */
-    public void editGrade(String subject, String grade, int question) {
-        // TODO: edit grade
-    }
+    public void editGrade(String subject, int question, int grade) {
+        // first perform linear search on subjects to get particular column
+        int subjectIndex = -1;
 
+        for(int i = 0; i < this.subjects.length; i++) {
+            if(this.subjects[i] == subject) {
+                subjectIndex = i; // this is our column
+            }
+        }
+        // if the subject exists in this report card
+        if (subjectIndex != -1) {
+            this.questionGrades[question - 1][subjectIndex] = grade;
+        } else {
+            // Kaboom!
+            System.out.println("Need to specify some error here...");
+        }
+    }
+    
+    /**
+     * TODO: Use the selection sort
+     */
     public void sortByGradeSubject() {
 
     }

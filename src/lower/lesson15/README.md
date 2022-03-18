@@ -90,6 +90,29 @@ questionGrades = {
 int mathTotal = questionGrades[0][0] + questionGrades[1][0] + questionGrades[2][0];
 ```
 
+To display one record, English for example, we can do:
+
+```
+System.out.println(subjects[2] + " " + questionsGrades[0][2] + " " + questionsGrades[1][2]  + " " + questionGrades[2][2]);
+```
 ### Arrays vs 2D arrays vs parallel arrays vs objects
 
-Arrays vs 2D arrays vs parallel arrays vs objects
+<b>Arrays</b>
+
+| Pros | Cons |
+|---|---|
+
+<b>2D arrays<b>
+
+| Pros | Cons |
+|---|---|
+
+<b>Parallel arrays</b> 
+
+| Pros | Cons |
+|---|---|
+
+<b>Objects</b>
+
+| Pros | Cons |
+|---|---|
