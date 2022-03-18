@@ -18,7 +18,7 @@ public class Arrays {
         /**
          * Declare an array variable and assign it to a collection of values of the same type.
          */
-        String[] studentNames = {"Daniil", "Bill", "Anirud", "Mike", "Alex"};
+        String[] studentNames = {"Daniil", "Bill", "Anirudh", "Mike", "Alex"};
 
         /**
          * We can loop through the indices, (note start at 0) and print out the array elements like we do variables.
