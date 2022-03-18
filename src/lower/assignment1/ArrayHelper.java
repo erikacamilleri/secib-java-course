@@ -9,7 +9,7 @@ public class ArrayHelper {
      * @return arr
      */
     public static int[] fill(int[] arr, int value) {
-        for (int i : arr) {
+        for(int i = 0; i < arr.length; i++) {
             arr[i] = value;
         }
         return arr;
