@@ -59,7 +59,7 @@ public class VariableScopeMain.java {
 
 I was really inspired by how BlueJ gives a visual representation of variable scope, so for each line of output I assigned a different colour based on the scope. When you run the program you should see...
 
-<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/java_blocks_of_code_bluej.PNG?raw=true" width="auto" height="300"/>
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/main/img/variable_scope_demo_run_sample.PNG" width="auto" height="300"/>
 
 ## How we programmed so far...
 
