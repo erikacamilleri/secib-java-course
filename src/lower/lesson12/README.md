@@ -19,7 +19,7 @@ For the long version re-do the [Brilliant course on stacks](https://brilliant.or
 In order to store the elements we are using an array that stores elements of type `Integer`. 
 Now that you have started learning about objects, you should probably know that in Java anything can be an object and Java has an object wrapper for all primitive data types.
 
-<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/number_stack_uml.PNG?raw=true" width="auto" height="300"/>
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/main/img/number_stack_uml.PNG" width="auto" height="300"/>
 
 ## Trace algorithms that use stacks
 

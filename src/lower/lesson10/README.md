@@ -14,7 +14,7 @@ Our most complex program to date is probably `MathPal.java`, so I made a short s
 
 In certain IDEs geared for beginners, like Blue J, code blocks are visually represented using colours:
 
-<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/java_blocks_of_code_bluej.PNG?raw=true" width="auto" height="300"/>
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/main/img/java_blocks_of_code_bluej.PNG" width="auto" height="300"/>
 
 You should note the following:
 

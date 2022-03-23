@@ -23,7 +23,7 @@ In order to store the elements we are using an array that stores elements of typ
 
 Just a reminder, in Java *anything* can be an object, but *usually* an object represents some entity or process in the real world. We will be implementing a `SimpleJobQueue` according to the spec described in the UML class diagram below (we designed this collaboratively in class).
 
-<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/java-ib-sec/img/job_queue_uml.PNG?raw=true" width="auto" height="300"/>
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/main/img/job_queue_uml.PNG" width="auto" height="300"/>
 
 # Testing Queue Functions
 
