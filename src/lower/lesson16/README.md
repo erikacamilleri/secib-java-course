@@ -95,4 +95,10 @@ Inheritance allows the sharing of attributes and methods among different classes
 
 # An Example
 
+We will be modelling a domestic coffee machine to practice  OOP concepts. The code I uploaded took into consideration the following machine:
+
 <img src="https://kingofexhibitionstands.com/wp-content/uploads/2020/06/Nespresso-koffiemachine-huren.jpg">
+
+Before this practical session however, we designed a neat Entity Relationship Diagram on our miro board. We identified the relationship in English. Whilst there is nothing wrong with that, I polished it up a bit so that the relationships are replaced with the appropriate symbols. Have a look:
+
+<img src="https://github.com/erikacamilleri/secib-java-course/blob/main/img/coffee_machine_erm_uml.jpeg?raw=true" />
