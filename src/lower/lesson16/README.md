@@ -20,9 +20,9 @@
 | **Encapsulation** | Bundling data and methods in a a class and data handling can only occur by using the class. | Yes | 16 |
 | **Inheritance** | Defines the "is a" relationship between two classes whereby a subclass would share the attributes and methods of its parent class. | Yes | 16 |
 | **Polymorphism** | Coming Soon | No | -- |
-| **Aggregation** | Defines the "has a" relationship between two classes. Since a class would have properties that are in themselves objects then it implies that the class is an aggregation (of other classes). | Yes | 16 |
+| **Aggregation** | Defines the "has a" relationship between two classes. Since a class would have properties that are in themselves objects then it implies that the class is an aggregation (of other classes). This is normally a tightly coupled relationship whereby the existence of a class only makes sense along with another. | Yes | 16 |
 | **Association** | A relationship between two (or more) objects that normally reflects a relationship in the real world we are trying to model with OOP. | Yes | 12 |
-| **Composition** | Coming Soon | No  | -- |
+| **Composition** | Defines the "uses a" relationship between two (or more) objects. Even though there is clearly some dependency between these, they are quite loosely coupled. This means that one class can exist without having the other. | Yes | 16 |
 
 # OOP Principle 1 is Encapsulation (D.2.1)
 
