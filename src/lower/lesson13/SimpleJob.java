@@ -26,4 +26,13 @@ public class SimpleJob {
             }
         }
     }
+
+    /**
+     * An addition by Ms Camilleri for lesson 17 (3.04.2022)
+     */
+    @Override
+    public boolean equals(Object o) {
+        SimpleJob compare = (SimpleJob) o;
+        return compare.id == this.id;
+    }
 }
