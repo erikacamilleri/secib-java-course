@@ -61,12 +61,11 @@ Why are ***hard dependencies*** so bad? There is no such thing as *bad code* but
 There are many real life analogies to help us understand. Let us imagine we are each buying a nice t-shirt for ourselves to wear.
 
 Popular designer brands tend to provide a "take it or leave it" shopping experience:
-
-<img src="house_of_fraser_tshirts.PNG">
+<img width="500" src="https://github.com/erikacamilleri/secib-java-course/blob/main/img/house_of_fraser_tshirts.PNG?raw=true">
 
 Artists and aspiring fashion designers are finding a lucrative outlet in tshirts and garments with the help of Etsy. Even with a modest price tag, they *can* compete with the big fish for one reason - customisation.
 
-<img src="etsy_custom_tshirts.PNG"/>
+<img width="500" src="https://github.com/erikacamilleri/secib-java-course/blob/main/img/etsy_custom_tshirts.PNG?raw=true"/>
 
 The `CoffeeMachine` we designed in Java last lesson is also a "take it or leave it" because we could only produce one kind of coffee machine that has a particular `MilkTank` and a particular `WaterTank`. It was so easy to build and we felt good about ourselves. But that feeling will be short lived because...
 
@@ -132,7 +131,7 @@ public class ElectricBlanket implements Switchable {
 
 <b>Dependency injection</b> means do not allow classes to create instances of other classes using the `new` keyword. Pass instances in through the constructor but these instances should `implement` an `interface`.
 
-There is a really good explainer video [https://www.youtube.com/watch?v=tW6UHD81SG0]here.
+There is a really good explainer video [here](https://www.youtube.com/watch?v=tW6UHD81SG0).
 
 What will our new and improved `CoffeeMachine` look like now? We need to create an interface for the `WaterTank` and the `MilkTank` which I called `Reservoirable`.
 
@@ -148,7 +147,7 @@ public interface Reservoirable {
 
 The `MilkTank` and the `WaterTank` will both have code for behaviour defined by `Reservoirable`. Have a good look at the code that I wrote for this lesson. The part of the UML concerning the `CoffeeMachine` and the tanks is now like this:
 
-<img src=""/>
+<img src="https://raw.githubusercontent.com/erikacamilleri/secib-java-course/97548da04c63995fe135bf4da775820ae3c1cc1f/draw.io/lower17_coffee_machine.drawio.svg"/>
 
 Notice how the 'black diamond' is elimintated! 
 
