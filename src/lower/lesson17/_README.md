@@ -11,10 +11,10 @@
 | **Members** | The *properties* and *methods* of a class. | Yes | 11 |
 | **Instance** | The variable that stores a single object in memory that retains the state during a program's lifetime. This is created using the `new` keyword e.g. `Soldier jack = new Soldier();`. In this case `jack` is an instance of `Soldier`. | Yes | 11  |
 | **Overloading** | Coming Soon | No | -- |
-| **Contract** | Coming Soon | No | -- |
+| **Contract** | Inspired by "real world contracts" because a subclass that either `extends` or `implements` another abstract class is *promising* to obey behavioural rules defined by the super with the option to `@Override` as long as rules are enforced. | Yes | 17 |
 | **Constructor** | The special method that is invoked using the `new` keyword when creating an *instance* of a *class*. Must share the same name of the class. | Yes | 13 |
 | **Default Constructor** | A constructor with no parameters. If a *constructor* is not defined within a class then the default one will be invoked upon `new`. | Yes | 13 |
-| **Overriding** | Allows a subclass (a class that either `extends` or `implements`) to provide specific code for methods defined in the superclass or interface. Methods defined in an interface *must* be overridden by the subclass. | Yes | 16 |
+| **Overriding** | Allows a subclass (a class that either `extends` or `implements`) to provide specific code for methods defined in the superclass or interface. Methods defined in an interface *must* be overridden by the subclass. | Yes | 17 |
 | **Interface** | Defines the "behaves like" relationship between two classes whereby the subclass would need to `@Override` the methods defined by the interface class. Interfaces are also referred to as 'contracts' because when a class `implements` an interface then it *promises* to have code for all behavioural methods. | Yes | 17 |
 | **Abstraction** | The process of defining classes by simplifying reality as much as possible. This means leaving unimportant details out and focusing on what is truly necessary. | Yes | 11 |
 | **Encapsulation** | Bundling data and methods in a a class and data handling can only occur by using the class. | Yes | 16 |
@@ -157,11 +157,6 @@ Notice how the 'black diamond' is elimintated!
 A way to ensure that you do not have a lot of dependencies is to use tried and tested OOP techniques which are referred to as <b>Design Patterns</b>. Design patterns represent the best practices used by experienced object-oriented software developers. Design patterns are solutions to general problems that software developers faced during software development. A specific problem you are working on is probably a variation of some general problem which there is a design pattern for. In fact, <b>Dependency Injection</b> is a design pattern in itself!
 
 You can assume that there are many design patterns out there and when you are inexperienced it is still extremely difficult to map your problem to a more general problem. So spending time deciding on a design pattern that fits may seem counter productive. This is why developers use frameworks. A software framework is a template for a kind of program (like a webapp, or mobile app etc...) that combines various design patterns that are appropriate for the most generic scenario. To explain, if you are building a desktop application using Google's Flutter then you are probably making use of design patterns like Observer Pattern. If you are building a web application in Java using Spring then you are making use of MVC Pattern and Dependency Injection. Dependency Injection is a pattern that is provided out of the box in most modern frameworks. Therefore you don't really need to think about it, but you can expect it to work like "magic". The challenge would be to find the best framework for you.
-
-
-
-
-
 
 ## OOP is not for everyone
 
