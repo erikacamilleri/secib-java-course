@@ -9,4 +9,6 @@ public interface Reservoirable {
     public void extract(double amount);
 
     public void heat(double temperature);
+
+    public void cool(double temperature);
 }

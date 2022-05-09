@@ -34,4 +34,9 @@ public class WaterTank implements Reservoirable {
     public void heat(double temperature) {
         // code for heating flat water
     }
+
+    @Override
+    public void cool(double temperature) {
+       // code for cooling flat water
+    }
 }

@@ -28,4 +28,10 @@ public class MilkTank implements Reservoirable {
     public void froth() {
         // code to froth the milk
     }
+
+    @Override
+    public void cool(double temperature) {
+        // TODO Auto-generated method stub
+        
+    }
 }
