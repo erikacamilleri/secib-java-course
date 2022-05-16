@@ -1,6 +1,7 @@
 package lower.lesson18;
 
 public class Hotel {
+    
     Room[] allRooms;
 
     public int[] findRooms() {
@@ -14,5 +15,9 @@ public class Hotel {
             }
         }
         return emptyRooms;
+     }
+
+     public Room getRoomByNumber(int roomNumber) {
+        return null;
      }
 }

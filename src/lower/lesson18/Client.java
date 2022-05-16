@@ -8,9 +8,9 @@ public class Client {
     
     private String name;
     
-    private Dates arrive;
+    private Date arrive;
     
-    private Dates leave;
+    private Date leave;
     
     private Room bedroom;
 
@@ -19,7 +19,7 @@ public class Client {
     /**
      * CONSTRUCTOR
      */
-    public Client(int id, String c, Dates dateIn, Dates dateOut, Room r) {
+    public Client(int id, String c, Date dateIn, Date dateOut, Room r) {
         setCustomerID(id);
         setName(c);
         setArrive(dateIn);
@@ -38,11 +38,11 @@ public class Client {
         name = c;
     }
 
-    public void setArrive(Dates dateIn) {
+    public void setArrive(Date dateIn) {
         arrive = dateIn;
     }
 
-    public void setLeave(Dates dateOut) {
+    public void setLeave(Date dateOut) {
         leave = dateOut;
     }
 
@@ -58,11 +58,11 @@ public class Client {
         return name;
     }
 
-    public Dates getArrive() {
+    public Date getArrive() {
         return arrive;
     }
 
-    public Dates getLeave() {
+    public Date getLeave() {
         return leave;
     }
 
@@ -74,7 +74,7 @@ public class Client {
      * CUSTOM BEHAVIOURAL METHODS
      */
     public void bill()   { 
-        int numberOfNights = Dates.StayDays(arrive, leave);
+        int numberOfNights = Date.stayDays(arrive, leave);
         double total = numberOfNights * bedroom.price;
         System.out.println("Name: " + name);
         System.out.println("Price per night: " + bedroom.price);
