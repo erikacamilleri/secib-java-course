@@ -8,9 +8,9 @@ public class GClient extends Client {
 
     private List<Room> rooms;
     
-    public GClient(int id, String c, Date dateIn, Date dateOut, List rooms, Group g) {
-        super(id, c, dateIn, dateOut, null);
-        this.rooms = rooms;
+    public GClient(int id, Date dateIn, Date dateOut, Group g) {
+        super(id, "", dateIn, dateOut, null);
+       
         this.g = g;
     }
 
@@ -20,5 +20,15 @@ public class GClient extends Client {
 
     public List<Room> getRoom() {
         return this.rooms;
+    }
+
+    public void allocateRooms() {
+
+    }
+
+    public Room getRoomByNumber(int roomNumber) {
+        Room room = null;
+        // code to find room in list
+        return room;
     }
 }

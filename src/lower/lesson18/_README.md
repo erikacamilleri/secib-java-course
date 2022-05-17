@@ -54,12 +54,33 @@ public class GClient extends Client {
 }
 ```
 
-15 b. First of all, we need to find 15 available rooms using the `findRooms()` method which returns an array of room numbers that can be used by the group. We can loop through the first 15, and created a collection of rooms for this group. The
+15 b. We need to create an instance of the `Group` object for "HappyTravellers" like so:
+```
+Group happyTravellers = new Group("HappyTravellers", 15);
+```
+We also need to create an instance of the `GClient` object and pass into the constructor: an id; two dates (for the stay) and the instance of `Group`, `happyTravellers`.
+```
+Date startDate = new Date(15, 5, 2022);
+Date endDate = new Date(27, 5, 2022);
+GClient happyTravellersGroup = new GClient(1, startDate, endDate, happyTravellers);
+```
+
+Inside the `GClient` object we can define a method `allocateRooms` that will use the `Hotel` object that has the method `findRooms` that returns an array of vacant room numbers. We will loop through the first 15 numbers, and using the `Room` object create an instance of `Room` with the `roomNumber`. The rooms are added to a collection called `rooms`.
+
+15 c. The code below:
 
 ```
-LinkedList<Room> rooms = new LinkedList<Room>();
-int[] available = Hotel.findRooms();
-for(int i = 1; i <= 15; i++) {
-    rooms.add(Hotel.findRoomByRoomNumber(available[i]));
-}
+public double bill(int[] gRooms) { 
+        double totalCost = 0;
+        // method that calculates the bill for the group
+        for (int i = 0; i < gRooms.length; i++) {
+            Room room = Hotel.getRoomByNumber(gRooms[i]); // assuming I have access to all rooms 
+            totalCost = totalCost + room.price;
+        }
+        return  totalCost;    
+    }
 ```
+
+16 a. One of the responsibilities is to make sure that the code produced *addresses the needs of the new hotel*. As part of the craft, code should be *readable* so that more changes in the future are relatively easy to do. Make sure the end-product is really *usable*. It is also critical for the programmer to *test* what he/she built.
+
+16 b. Most programming languages support unicode because of data portability. Programming languages like Java come with a lot of libraries, and a localisation library would be really useful when supporting multiple languages. For wide distribution, it is better to sell an executable. Use many tools available in order to program options that the client can set and save into a file. 

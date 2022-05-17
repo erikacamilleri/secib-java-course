@@ -22,6 +22,12 @@ public class Group    {
     int[] gRooms = new int[number];// array to hold room numbers allocated to the group
     
     public double bill(int[] gRooms) { 
-        // method that calculates the bill for the group      
+        double totalCost = 0;
+        // method that calculates the bill for the group
+        for (int i = 0; i < gRooms.length; i++) {
+            Room room = Hotel.getRoomByNumber(gRooms[i]); // assuming I have access to all rooms 
+            totalCost = totalCost + room.price;
+        }
+        return  totalCost;    
     }
 }
