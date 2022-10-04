@@ -27,7 +27,7 @@ public void bill()   {
         System.out.println("Number of nights: " + numberOfNights);
         System.out.println("Dates: " + arrive + " - " + leave);
         System.out.println("Total Due: " + total); 
-    }
+}
 ```
 15 a. The code below:
 

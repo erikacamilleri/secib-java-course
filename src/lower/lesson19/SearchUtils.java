@@ -1,30 +1,28 @@
 package lower.lesson19;
 
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 
 public class SearchUtils {
 
     public static int linear(List<Object> haystack, Object needle) throws SearchUtilsException {
-        
-        LinkedList<Integer> numbersList = new LinkedList<Integer>();
-        
-        boolean isFound = false;
+
+        boolean isFound = false; // flag
         int pos = -1;
 
-        // TODO: Write a suitable comment so that you can understand what is going on
-        // when you look at me in the future
+        // Get the object that will help me iterate through the nodes in the list
         Iterator<Object> iterator = haystack.iterator();
 
-        // TODO: Comment
+        // Since it is dynamic we are using a while loop here
         while(iterator.hasNext() && !isFound) {
             pos++;
-            // TODO: Comment
+            // Get the next node in the list
             Object visited = iterator.next();
             if (visited.equals(needle)) {
-                // TODO: What is missing here?
+                // reset the iterator (optional)
+                iterator = haystack.iterator();
+                // set the flag
+                isFound = true;
             }
         }
 

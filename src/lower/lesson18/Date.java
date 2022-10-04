@@ -39,5 +39,6 @@ public class Date {
      */
     public static int stayDays(Date x, Date y)  {
         // method that calculates the number of nights between x and y  
+        return 0;
     }
 }

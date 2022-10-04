@@ -17,7 +17,7 @@ public class Hotel {
         return emptyRooms;
      }
 
-     public static Room getRoomByNumber(int roomNumber) {
+     public Room getRoomByNumber(int roomNumber) {
         return null;
      }
 }

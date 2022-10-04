@@ -28,7 +28,7 @@ public class GClient extends Client {
 
     public Room getRoomByNumber(int roomNumber) {
         Room room = null;
-        // code to find room in list
+        
         return room;
     }
 }

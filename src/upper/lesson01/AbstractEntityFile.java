@@ -1,4 +1,4 @@
-package upper.lesson05.record;
+package upper.lesson01;
 
 import java.io.File;
 import java.io.RandomAccessFile;
@@ -21,6 +21,10 @@ public abstract class AbstractEntityFile<T> {
 
     protected abstract T deserialize(String record);
 
+    protected abstract boolean delete(int id);
+
+    protected abstract int compare(T record1, T record2);
+
     /**
      * ------ Data Access Object API ----------------------------------------------
      */
@@ -31,7 +35,7 @@ public abstract class AbstractEntityFile<T> {
     public abstract void save(T entity);
 
     /**
-     * ------ Random Access File CRUD Utils ---------------------------------------
+     * ------ Random Access File Utils ---------------------------------------
      */
     public File getFile() {
         File file = new File(DIR, this.getFileName());
@@ -51,7 +55,11 @@ public abstract class AbstractEntityFile<T> {
         }
     }
 
-    public void insert() {
+    /**
+     * ------ Fundamental file methods ---------------------------------------
+     */
+    // Write a new record to the file
+    public void create() {
         File writeTo = this.getFile();
         try {
             RandomAccessFile raf = new RandomAccessFile(writeTo, "rw");
@@ -65,6 +73,7 @@ public abstract class AbstractEntityFile<T> {
         }
     }
 
+    // Change an existing record in the file
     public void update(int id) {
         File writeTo = this.getFile();
         try {
@@ -79,6 +88,7 @@ public abstract class AbstractEntityFile<T> {
         }
     }
 
+    // Extract a single record from the file
     public String read(int id) {
         File readFrom = this.getFile();
         try {
@@ -93,23 +103,4 @@ public abstract class AbstractEntityFile<T> {
             return null;
         }
     }
-
-    // TODO This is a lesson on its own
-    public void delete(int id) {
-        File writeTo = new File(DIR, this.getFileName());
-        try {
-            RandomAccessFile raf = new RandomAccessFile(writeTo, "rw");
-            long pos = (id - 1) * (getRecordSize() + 2);
-            raf.seek(pos);
-            byte[] emptyLine = new byte[getRecordSize() + 2];
-            raf.write(emptyLine);
-            raf.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     *  ------ Paginated Records Methods ----------------------------------
-     */
 }
