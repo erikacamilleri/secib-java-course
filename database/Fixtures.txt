@@ -1,0 +1,6 @@
+ABC123JKLMN123;FB;MCH;IRL;{"api":"https://blabla.com","token":"QaB567833434dsdfJKL12"}
+XYZ123JKLMN123;FB;CHL;MON;{"api":"https://blabla.com","token":"QaB567833434dsdfJKL12"}
+DFH123JKLMN123;FB;INT;JUV;{"api":"https://blabla.com","token":"QaB567833434dsdfJKL12"}
+NMK123JKLMN123;FB;MIL;MCT;{"api":"https://blabla.com","token":"QaB567833434dsdfJKL12"}
+RTV123JKLMN123;FB;CEL;RAN;{"api":"https://blabla.com","token":"QaB567833434dsdfJKL12"}
+ZTV123VKLMN123;FB;MLT;RAN;{"api":"https://blabla.com","token":"QaB567833434dsdfJKL12"}

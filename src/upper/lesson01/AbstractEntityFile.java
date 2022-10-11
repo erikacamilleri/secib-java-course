@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public abstract class AbstractEntityFile<T> {
 
-    private final String DIR = "secib-java-course/database";
+    private final String DIR = "database/";
 
     protected final String DELIMITER = ";";
 
@@ -22,8 +22,6 @@ public abstract class AbstractEntityFile<T> {
     protected abstract T deserialize(String record);
 
     protected abstract boolean delete(int id);
-
-    protected abstract int compare(T record1, T record2);
 
     /**
      * ------ Data Access Object API ----------------------------------------------
@@ -48,7 +46,7 @@ public abstract class AbstractEntityFile<T> {
             RandomAccessFile raf = new RandomAccessFile(readFrom, "r");
             int pos = (int) raf.length();
             raf.close();
-            return pos / (getRecordSize() + 2);
+            return pos / (getRecordSize());
         } catch (Exception e) {
             e.printStackTrace();
             return 0;
@@ -78,7 +76,7 @@ public abstract class AbstractEntityFile<T> {
         File writeTo = this.getFile();
         try {
             RandomAccessFile raf = new RandomAccessFile(writeTo, "rw");
-            long pos = (id - 1) * (getRecordSize() + 2);
+            long pos = (id - 1) * (getRecordSize()); // + 2
             raf.seek(pos);
             raf.write(serialize().getBytes());
             raf.writeBytes(System.getProperty("line.separator"));
@@ -93,7 +91,7 @@ public abstract class AbstractEntityFile<T> {
         File readFrom = this.getFile();
         try {
             RandomAccessFile raf = new RandomAccessFile(readFrom, "r");
-            long pos = (id - 1) * (getRecordSize() + 2);
+            long pos = (id - 1) * (getRecordSize()); // + 2
             raf.seek(pos);
             String data = raf.readLine();
             raf.close();
