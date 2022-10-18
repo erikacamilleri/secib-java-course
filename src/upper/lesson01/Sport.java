@@ -49,16 +49,15 @@ public class Sport extends AbstractEntityFile<Sport> {
         return false;
     }
 
-   @Override
+    @Override
     public ArrayList<Sport> all() {
         // TODO Auto-generated method stub
         return null;
     }
 
-   @Override
+    @Override
     public Sport getById(int id) {
-        // TODO Auto-generated method stub
-        return null;
+       throw new UnsupportedOperationException("Use static method Sport.getDaoInstance().getById(sportId);"); 
     }
 
    public void save() {
