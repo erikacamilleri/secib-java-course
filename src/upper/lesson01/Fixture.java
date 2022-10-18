@@ -113,7 +113,7 @@ public class Fixture extends AbstractEntityFile<Fixture> {
         // When someone else's code does not work for you
         // you can return an exception... but be nice and give an alternative
         // do honour the contract
-        throw new UnsupportedOperationException("Use static method Fixture.getDaoInstance().getById(id);");
+        throw new UnsupportedOperationException("Use static method Fixture.getDaoInstance().getById(fixtureId);");
     }
 
     public void save() {
@@ -143,12 +143,19 @@ public class Fixture extends AbstractEntityFile<Fixture> {
         return daoInstance;
     }
 
-    public static Fixture getById(String id) {
-        // TODO: Read the file sequentially and compare the id
+    public Fixture getById(String id) {
+        int lastRecordId = getLastRecordId();
+        int currentRecordId = 1;
+        while (currentRecordId <= lastRecordId) {
+            Fixture fixture = deserialize(read(currentRecordId));
+            if (fixture.getFixtureId().equals(id)) {
+                return fixture;
+            }
+        }
         return null;
     }
 
-    public static ArrayList<Fixture> getAll() {
+    public ArrayList<Fixture> getAll() {
         ArrayList<Fixture> fixtureList = new ArrayList<Fixture>();
         // TODO: For each record in the Fixture file, deserialize it
         // and add it to the list

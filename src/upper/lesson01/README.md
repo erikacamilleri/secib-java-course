@@ -46,7 +46,13 @@ If we had to rethink computers and reinvent entirely we still have to preserve t
 
 It is only natural that we want to do all of the above with our data records. We want to create a record. We want to read it. We want to delete it. We want to make changes, so update it. And when we probably want to search, order data so we would need to compare two entities.
 
-### Always Recall Links from Last Year Mainly:
+## Advantages/Disadvantages of using third-party code/libraries
+
+<b>Advantages</b>
+
+<b>Disadvantages</b>
+
+## Always Recall Links from Last Year Mainly:
 - D.3.1 Define the terms: class, identifier, primitive, instance variable, parameter variable, local variable.
 - D.3.2 Define the terms: method, accessor, mutator, constructor, signature, return
 value.
