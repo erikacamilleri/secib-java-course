@@ -151,6 +151,7 @@ public class Fixture extends AbstractEntityFile<Fixture> {
             if (fixture.getFixtureId().equals(id)) {
                 return fixture;
             }
+            currentRecordId += 1;
         }
         return null;
     }

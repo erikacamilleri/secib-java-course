@@ -49,8 +49,12 @@ It is only natural that we want to do all of the above with our data records. We
 ## Advantages/Disadvantages of using third-party code/libraries
 
 <b>Advantages</b>
+- Less work and I am using code that has been proven to work before.
+- Do not need to worry about being responsible for bugs in the libraries because other people are taking care of it.
 
 <b>Disadvantages</b>
+- Sometimes third party code needs tweaking, but there no access which forces the developer to change their own code to work with the library.
+- You have no control over the documentation.
 
 ## Always Recall Links from Last Year Mainly:
 - D.3.1 Define the terms: class, identifier, primitive, instance variable, parameter variable, local variable.
