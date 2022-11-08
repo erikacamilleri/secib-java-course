@@ -103,23 +103,49 @@ public class Node {
     }
 
     /**
-     * TODO: Visit/print values nodes in post order
+     * Visit/print values nodes in post order
      */
     public void printPostOrder() {
 
-        // If the node is already visited there return
+        // If the node is already visited then return
+        if (this.isVisited) {
+            return;
+        }
 
         /* Recur on the left */
+        if(this.left != null) {
+            this.left.printPostOrder();
+        }
 
         /* Recur on the right */
+        if (this.right != null) {
+            this.right.printPostOrder();
+        }
 
         /* Visit and print node value */
+        this.isVisited = true;
+        System.out.print(this.visit() + ", ");         
     }
 
     /**
-     * TODO: Unvisit nodes in post order
+     * Unvisit nodes in post order
      */
     public void reset() {
+        if (!this.isVisited) {
+            return;
+        }
 
+        /* Recur on the left */
+        if(this.left != null) {
+            this.left.reset();
+        }
+
+        /* Recur on the right */
+        if (this.right != null) {
+            this.right.reset();
+        }
+
+        /* Reset node */
+        this.isVisited = false;  
     }
 }

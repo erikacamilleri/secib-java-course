@@ -25,10 +25,15 @@ public class DemoBinaryTree {
         System.out.print("In Order: ");
         finn.printInorder();
 
-        // TODO: The following does not work because we have to clean visited nodes first
+        // The following does not work because we have to clean visited nodes first
         // First implement post order... then use the same logic to implement clean
-        finn.cleanPostOrder();
+        finn.reset();
         System.out.print("\nPre Order: ");
         finn.printPreOrder();
+
+        // Let us test the post order printing...
+        finn.reset();
+        System.out.print("\nPost Order: ");
+        finn.printPostOrder();
     }
 }
