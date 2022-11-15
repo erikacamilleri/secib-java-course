@@ -7,12 +7,15 @@ import java.util.ListIterator;
 
 public class Deck implements List<Card> {
     
+    /**
+     * Add the attributes
+     */
+    private String name;
+
+    // Usage: Deck americanFoodsDeck = new Deck("American Foods Module");
     public Deck(String name) {
-
+        this.name = name;
     }
-
-    
-
 
     public void shuffle() {
 

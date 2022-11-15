@@ -1,21 +1,20 @@
 package upper.lesson03;
 
-import org.json.JSONObject;
+public class Card extends ListNode<Card> {
 
-public class Card extends ListNode<JSONObject> {
+    public boolean isKnown;
+    
+    public String front;
 
-    boolean isKnown;
+    public String back;
 
-    String front;
-
-    String back;
+    public Card(String front, String back) {
+        this.front = front;
+        this.back = back;
+    }
 
     @Override
-    public JSONObject getValue() {
-        JSONObject value = new JSONObject();
-        value.put("isKnown", this.isKnown);
-        value.put("front", this.front);
-        value.put("back", this.back);
-        return value;
+    public Card getValue() {
+        return this;
     }
 }
