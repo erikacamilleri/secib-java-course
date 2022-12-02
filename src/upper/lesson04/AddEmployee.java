@@ -5,7 +5,7 @@ package upper.lesson04;
  */
 public class AddEmployee {
     public static void main(String[] args) {
-        save(new SalesPersonnel());
+        //save(new SalesPersonnel());
         save(new OfficeStaff());
     }
 
