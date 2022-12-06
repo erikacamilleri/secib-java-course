@@ -1,3 +1,30 @@
+# Glossary
+
+| **Term** | Meaning | Covered | Lesson |
+|---|---|---|---|
+| **Object-Oriented Programming (OOP)** | An approach to designing and building applications that are flexible, natural, well-crafted, and testable by focusing on objects that interact cleanly with one another. | Yes | 15 |
+| **Class** | A code file which acts as the blueprint, or cookie cutter, of an object by specifying the properties (characteristics) that and methods (behaviour). | Yes | 11 |
+| **Property** | A characteristic of an object defined in the class e.g. in a class called `Person` a property can be `eyeColour`. | Yes | 11 |
+| **Method** | The code that defines behaviour of a class normally contains a verb like `changeWeapon()` or `respawn()`. | Yes | 11 |
+| **Mutator** | A method in a class that provides a way to update the current state of an object in other program parts. | Yes | 16 |
+| **Accessor** | A method in a class that provides a way to get the current state of an object in other program parts. | Yes | 16 |
+| **Members** | The *properties* and *methods* of a class. | Yes | 11 |
+| **Instance** | The variable that stores a single object in memory that retains the state during a program's lifetime. This is created using the `new` keyword e.g. `Soldier jack = new Soldier();`. In this case `jack` is an instance of `Soldier`. | Yes | 11  |
+| **Overloading** | Coming Soon | No | -- |
+| **Contract** | Inspired by "real world contracts" because a subclass that either `extends` or `implements` another abstract class is *promising* to obey behavioural rules defined by the super with the option to `@Override` as long as rules are enforced. | Yes | 17 |
+| **Constructor** | The special method that is invoked using the `new` keyword when creating an *instance* of a *class*. Must share the same name of the class. | Yes | 13 |
+| **Default Constructor** | A constructor with no parameters. If a *constructor* is not defined within a class then the default one will be invoked upon `new`. | Yes | 13 |
+| **Overriding** | Allows a subclass (a class that either `extends` or `implements`) to provide specific code for methods defined in the superclass or interface. Methods defined in an interface *must* be overridden by the subclass. | Yes | 17 |
+| **Interface** | Defines the "behaves like" relationship between two classes whereby the subclass would need to `@Override` the methods defined by the interface class. Interfaces are also referred to as 'contracts' because when a class `implements` an interface then it *promises* to have code for all behavioural methods. | Yes | 17 |
+| **Abstraction** | The process of defining classes by simplifying reality as much as possible. This means leaving unimportant details out and focusing on what is truly necessary. | Yes | 11 |
+| **Encapsulation** | Bundling data and methods in a a class and data handling can only occur by using the class. | Yes | 16 |
+| **Inheritance** | Defines the "is a" relationship between two classes whereby a subclass would share the attributes and methods of its parent class. | Yes | 16 |
+| **Polymorphism** | When code can take *many forms* either through a strong relationship between classes like inheritence and method overriding, or, method overloading (using the same name for multiple methods but with different parameters) e.g., overloading a constructor.  | Yes | This lesson |
+| **Aggregation** | Defines the "has a" relationship between two classes. Since a class would have properties that are in themselves objects then it implies that the class is an aggregation (of other classes). This is normally a tightly coupled relationship whereby the existence of a class only makes sense along with another. | Yes | 16 |
+| **Association** | A relationship between two (or more) objects that normally reflects a relationship in the real world we are trying to model with OOP. | Yes | 12 |
+| **Composition** | Defines the "uses a" relationship between two (or more) objects. Even though there is clearly some dependency between these, they are quite loosely coupled. This means that one class can exist without having the other. | Yes | 16 |
+
+
 # May 2017 Paper 2 Option D
 
 13 a. A class simply defines what a real world entity has as attributes (characteristics) and methods (behaviour). It does not take up any space in main memory. The instance however, is a real world example of that particular entity and takes up memory when the program is in execution.
@@ -116,3 +143,9 @@ public static String highest(SalesPersonnel[] salesPeople) {
 }
 ```
 
+h. The changes I propose are as follows:
+1. We added the getPaid() in the Employee class.
+2. The Employee class was changed to be abstract, and even the getPaid() is abstract so that Employee is class that describes a contract.
+3. Override getPaid() in the OfficeStaff and in the SalesPersonnel.
+
+i. First of all, an example of polymorphism is a method that may have multiple implementations. In the previous question, we indeed have a getPaid() method which must be implemented differently because an OfficeStaff and a SalesPersonnel get paid in different ways. Polymorphism is most evident between OfficeStaff, SalesPersonnel and Employee. Because any employee in the company, can take a different form e.g., can either be an OfficeStaff or a SalesPersonnel, but both inherit from Employee so no matter the shape or form, the both get paid.

@@ -1,6 +1,9 @@
 package upper.lesson04;
 
-public class Employee {
+/**
+ * Employee contract
+ */
+abstract class Employee {
     
     // Attributes
     Salary salary;
@@ -8,7 +11,5 @@ public class Employee {
     String position;
     
     // Methods
-    public void getPaid() {
-        
-    }
+    abstract void getPaid();
 }

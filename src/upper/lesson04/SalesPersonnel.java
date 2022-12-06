@@ -39,7 +39,8 @@ public class SalesPersonnel extends Employee {
     // Behavioural Methods
 
     public void setSalesHistory(Sales s) {
-
+        salesHistory[count] = s;
+        count = count + 1;
     }
 
     public double calcTotalSales() {
@@ -50,5 +51,11 @@ public class SalesPersonnel extends Employee {
             totalSales = totalSales + (s.getValue()*s.getQuantity());
         }
         return totalSales;
+    }
+
+    @Override
+    void getPaid() {
+        // TODO Auto-generated method stub
+        
     }
 }

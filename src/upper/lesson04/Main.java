@@ -3,6 +3,8 @@ package upper.lesson04;
 public class Main {
     
     public static void main(String[] args) {
+        Employee employee = new Employee();
+
         // Create two instances of Sales personnel
         Sales[] juniorSales = new Sales[100];
         SalesPersonnel juniorSalesPerson = new SalesPersonnel("Erika Briffa", juniorSales, 0);
@@ -42,5 +44,11 @@ public class Main {
            }
         }
         return highestId;
+    }
+
+    public static String addSales(Sales s, String id) {
+        SalesPersonnel sp = new SalesPersonnel(id);
+        sp.setSalesHistory(s);
+        return id;
     }
 }
